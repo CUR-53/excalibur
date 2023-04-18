@@ -8,11 +8,12 @@
 
 /* ---------- Reset END ---------- */
 
-/* ---------- Main ---------- */
+/* ---------- Forside ---------- */
 .forside-main {
-  height: 10000px;
+  height: 4106px;
   background-image: url("../assets/img/city-road.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   font-family: "Open Sans", sans-serif;
 }
@@ -24,7 +25,7 @@ canvas {
   transform: translate(-50%, -50%);
 }
 
-/* ---------- Main END ---------- */
+/* ---------- Forside END ---------- */
 
 /* ---------- Login ---------- */
 .login-container {
