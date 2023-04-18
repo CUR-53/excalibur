@@ -29,11 +29,22 @@ canvas {
 
 /* ---------- Login ---------- */
 .login-main {
+  position: relative;
   height: 100vh;
-  background-image: url("../assets/img/city-road.jpg");
-  background-size: cover;
-  background-position: center;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+
+.login-section {
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  height: 4106px;
+  background-image: url("../assets/img/city-road.jpg");
+  background-position: center;
+  background-size: cover;
+  animation: scroll 95s infinite linear alternate;
 }
 
 .login-container {
@@ -42,7 +53,7 @@ canvas {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
-  height: 300px;
+  height: max-content;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   padding: 10px;
@@ -62,13 +73,13 @@ canvas {
   display: flex;
   color: white;
   flex-direction: column;
-  gap: 30px;
   height: 100%;
 }
 
 .login-form > button {
   max-width: 100px;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 #email {
@@ -82,6 +93,7 @@ canvas {
   border-radius: 5px;
   border: none;
   padding: 5px;
+  margin-bottom: 30px;
 }
 
 .btn-form {
@@ -92,4 +104,29 @@ canvas {
   cursor: pointer;
 }
 
+.btn-form:hover {
+  background-color: lightgray;
+}
+
+@keyframes scroll {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -3000px;
+  }
+}
+
+.login-form > a {
+  color: rgba(255, 255, 255, 0.80);
+  text-align: center;
+  cursor: pointer;
+  font-weight: 200;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+
+.login-form > a:hover {
+  color: rgba(255, 255, 255, 1);
+}
 /* ---------- Login END ---------- */
