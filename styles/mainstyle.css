@@ -52,7 +52,7 @@ canvas {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
+  min-width: 300px;
   height: max-content;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
