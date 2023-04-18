@@ -1,0 +1,16 @@
+/* ---------- Main ---------- */
+
+body {
+  height: 10000px;
+  background-image: url("img/ForestBackground.jpg");
+  background-size: contain;
+}
+
+canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---------- Main END ---------- */
