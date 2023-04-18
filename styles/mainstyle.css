@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-/* ---------- Main ---------- */
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body {
+/* ---------- Reset END ---------- */
+
+/* ---------- Main ---------- */
+.forside-main {
   height: 10000px;
   background-image: url("../assets/img/city-road.jpg");
   background-size: contain;
@@ -17,3 +25,51 @@ canvas {
 }
 
 /* ---------- Main END ---------- */
+
+/* ---------- Login ---------- */
+.login-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-title {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.login-form input {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.btn-form {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- Login END ---------- */
