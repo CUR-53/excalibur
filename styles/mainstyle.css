@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 /* ---------- Main ---------- */
 
 body {
   height: 10000px;
-  background-image: url("img/ForestBackground.jpg");
+  background-image: url("../assets/img/city-road.jpg");
   background-size: contain;
+  background-position: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 canvas {
