@@ -7,7 +7,7 @@ let frameCount = 8; // Antal billeder i spritesheetet
 let currentFrame = 0; // Aktuelt rammeindeks
 let scrollTop = 0; // Scrolltop-værdi
 
-spriteSheet.src = "img/walkGuy.png"; // Sti til dit spritesheet-billede
+spriteSheet.src = "assets/img/walkGuy.png"; // Sti til dit spritesheet-billede
 
 window.addEventListener("scroll", animateSprite);
 window.addEventListener("load", animateSprite); // Kald animateSprite manuelt når siden er indlæst
