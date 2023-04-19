@@ -9,7 +9,7 @@
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ff-primary);
   font-size: 0.625rem;
 }
 
@@ -26,6 +26,7 @@ body {
 
   --ff-primary: "Open Sans", sans-serif;
 
+  /* 1.250 Major Third */
   --fs-300: 0.64rem;
   --fs-400: 1rem;
   --fs-500: 1.25rem;
