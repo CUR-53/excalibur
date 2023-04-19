@@ -298,4 +298,14 @@ p {
   margin: 20px;
 }
 
+.pdf {
+  color: black;
+  display: grid;
+  place-content: center;
+}
+
+.pdf:hover {
+  color: white;
+}
+
 /* ---------- Medlem END ---------- */
