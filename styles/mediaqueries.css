@@ -1,24 +1,26 @@
 @media only screen and (min-width: 768px) {
-    .register-container {
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .register-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    .register-row {
-        flex-direction: row;
-        gap: 20px;
-    }
+  .register-row {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .register-main {
-        overflow: hidden;
-    }
+  .register-main {
+    overflow: hidden;
+    height: 100vh;
+  }
 
-    .register-section {
-        height: 4106px;
-        animation: scroll 95s infinite linear alternate;
-    }
+  .register-section {
+    height: 4106px;
+    position: absolute;
+    animation: scroll 95s infinite linear alternate;
+  }
 }

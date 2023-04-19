@@ -2,9 +2,10 @@
 .forside-main {
   height: 6740px;
   background-image: url('../assets/img/city-road.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -12,6 +13,7 @@ canvas {
   position: fixed;
   left: 50%;
   top: 50%;
+
   transform: translate(-50%, -50%);
 }
 
@@ -20,50 +22,61 @@ canvas {
 /* ---------- Login ---------- */
 .login-main {
   position: relative;
-  height: 100vh;
+
   width: 100%;
+  height: 100vh;
+
   font-family: 'Open Sans', sans-serif;
+
   overflow: hidden;
 }
 
 .login-section {
-  bottom: 0px;
   position: absolute;
+  bottom: 0px;
+
   width: 100%;
   height: 6740px;
   background-image: url('../assets/img/city-road.jpg');
   background-position: center;
   background-size: cover;
+
   animation: scroll 95s infinite linear alternate;
 }
 
 .login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+
   min-width: 300px;
   height: max-content;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transform: translate(-50%, -50%);
 }
 
 .login-title {
+  margin-top: 20px;
+
   font-size: 30px;
   color: white;
-  margin-top: 20px;
 }
 
 .login-form {
   display: flex;
-  color: white;
   flex-direction: column;
+
   height: 100%;
+
+  color: white;
 }
 
 .login-form > button {
@@ -76,17 +89,18 @@ canvas {
   width: 100%;
   min-width: 200px;
   height: 30px;
-  border-radius: 5px;
-  border: none;
-  padding: 5px;
   margin-bottom: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
 }
 
 .btn-form {
   width: 100%;
   height: 30px;
-  border-radius: 5px;
   border: none;
+  border-radius: 5px;
+
   cursor: pointer;
 }
 
@@ -105,12 +119,14 @@ canvas {
 }
 
 .login-form > a {
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  cursor: pointer;
-  font-weight: 200;
-  font-size: 13px;
   padding-bottom: 20px;
+
+  font-size: 13px;
+  font-weight: 200;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+
+  cursor: pointer;
 }
 
 .login-form > a:hover {
@@ -122,49 +138,59 @@ canvas {
 /* ---------- Registrer ---------- */
 .register-main {
   position: relative;
-  height: 105vh;
+
   width: 100%;
+  height: 100%;
+
   font-family: 'Open Sans', sans-serif;
 }
 
 .register-section {
   bottom: 0px;
-  position: absolute;
+
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   background-image: url('../assets/img/city-road.jpg');
   background-position: center;
   background-size: cover;
 }
 
 .register-container {
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   min-width: 100px;
-  height: max-content;
+  height: 100%;
 }
 
 .register-title {
+  margin: 10px 0 40px;
+
   font-size: 30px;
   color: white;
-  margin: 20px 0 30px;
 }
 
 .register-grid-container {
   display: flex;
   flex-direction: row;
+
+  margin: 25px 30px 25px;
+
   gap: 100px;
-  margin: 20px 20px 0;
 }
 
 .register-form {
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  color: white;
   flex-direction: column;
+
   height: 100%;
+  padding: 30px;
   border-radius: 10px;
-  padding: 30px
+  background-color: rgba(0, 0, 0, 0.5);
+
+  color: white;
 }
 
 .register-form > button {
@@ -181,25 +207,26 @@ canvas {
 
 .register-form input {
   width: 100%;
-  min-width: 300px;
-  height: 30px;
-  border-radius: 5px;
-  border: none;
-  padding: 5px;
+  min-width: 290px;
+  height: 40px;
   margin-bottom: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
 }
 
 input::placeholder {
   font-size: 1.3rem;
   font-weight: 100;
-  color: rgb(180, 180, 180);
+  color: rgb(147, 147, 147);
 }
 
 .btn-register-form {
   width: 100%;
   height: 30px;
-  border-radius: 5px;
   border: none;
+  border-radius: 5px;
+
   cursor: pointer;
 }
 
@@ -218,12 +245,15 @@ input::placeholder {
 }
 
 .register-form > a {
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  cursor: pointer;
+  width: max-content;
+  margin: 5px auto 10px;
+
+  font-size: 14px;
   font-weight: 200;
-  font-size: 13px;
-  padding-bottom: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+
+  cursor: pointer;
 }
 
 .register-form > a:hover {
@@ -239,9 +269,11 @@ input::placeholder {
 
 .galleries-body {
   display: grid;
-  place-content: center;
+
   min-height: 100vh;
   padding: 2rem;
+
+  place-content: center;
 }
 
 .galleries-main {
@@ -249,15 +281,17 @@ input::placeholder {
 }
 
 .galleri-container {
-  color: white;
-  background-color: hsl(0, 0%, 0%);
   margin-top: 2em;
+  background-color: hsl(0, 0%, 0%);
+
+  color: white;
 }
 
 .galleri {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap-reverse;
+  justify-content: center;
+
   overflow: hidden;
 }
 
@@ -268,20 +302,25 @@ input::placeholder {
 .galleri > div {
   display: block;
   flex: 1 1 300px;
-  transition: opacity 0.2s linear;
+
   position: relative;
+
+  transition: opacity 0.2s linear;
 }
 
 .galleri-content {
-  position: absolute;
   display: flex;
   align-items: end;
   justify-content: space-between;
+
+  position: absolute;
   bottom: 0;
-  background: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.8));
+
   width: 100%;
   min-height: 50%;
   padding: 3rem 2rem;
+  background: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.8));
+
   cursor: pointer;
 }
 
@@ -291,38 +330,43 @@ input::placeholder {
 }
 
 .galleri > div img {
-  height: 100%;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  object-fit: cover;
 }
 
 /* ---------- Galleri END ---------- */
 
 /* ---------- Medlem ---------- */
 .medlem-main {
-  height: 100%;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
 .medlem-container {
   display: grid;
-  place-content: center;
+
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.2);
+
   max-width: 800px;
   min-width: 375px;
   margin: 0 auto;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transform: translate(-50%, -50%);
+
+  place-content: center;
 }
 
 .medlem-container > p a {
-  color: rgba(255, 255, 255, 0.6);
   text-decoration: underline;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .medlem-container > p a:hover {
@@ -330,8 +374,9 @@ input::placeholder {
 }
 
 h2 {
-  text-align: center;
   margin-top: 20px;
+
+  text-align: center;
 }
 
 p {
@@ -339,8 +384,10 @@ p {
 }
 
 .pdf {
-  color: black;
   display: grid;
+
+  color: black;
+
   place-content: center;
 }
 
