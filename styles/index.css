@@ -14,6 +14,7 @@ canvas {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 /* ---------- Forside END ---------- */
 
 /* ---------- Login ---------- */
@@ -65,7 +66,7 @@ canvas {
   height: 100%;
 }
 
-.login-form > button {
+.login-form>button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -107,7 +108,7 @@ canvas {
   }
 }
 
-.login-form > a {
+.login-form>a {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   cursor: pointer;
@@ -116,7 +117,7 @@ canvas {
   padding-bottom: 20px;
 }
 
-.login-form > a:hover {
+.login-form>a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -171,7 +172,7 @@ canvas {
   height: 100%;
 }
 
-.register-form > button {
+.register-form>button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -213,7 +214,7 @@ canvas {
   }
 }
 
-.register-form > a {
+.register-form>a {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   cursor: pointer;
@@ -222,14 +223,14 @@ canvas {
   padding-bottom: 20px;
 }
 
-.register-form > a:hover {
+.register-form>a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
 /* ---------- Registrer END ---------- */
 
 /* ---------- Galleri ---------- */
-.flow > * + * {
+.flow>*+* {
   margin-top: var(--flow-space, 1em);
 }
 
@@ -245,11 +246,11 @@ canvas {
   gap: 2em;
 }
 
-.galleri > div {
+.galleri>div {
   line-height: 0;
 }
 
-.galleri > div img {
+.galleri>div img {
   height: 12.5rem;
   aspect-ratio: 4/3;
   object-fit: cover;
@@ -258,3 +259,45 @@ canvas {
 }
 
 /* ---------- Galleri END ---------- */
+
+/* ---------- Medlem ---------- */
+.medlem-main {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.medlem-container {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.medlem-container>p a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+}
+
+.medlem-container>p a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  margin: 20px;
+}
+
+/* ---------- Medlem END ---------- */
