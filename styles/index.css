@@ -233,27 +233,44 @@ canvas {
   margin-top: var(--flow-space, 1em);
 }
 
-.galleries-main {
+.galleries-body {
   display: grid;
   place-content: center;
   min-height: 100vh;
+  padding: 2rem;
+}
+
+.galleries-main {
+  max-width: 900px;
+}
+
+.galleri-container {
+  background-color: hsl(0, 0%, 0%);
+  margin-top: 2em;
 }
 
 .galleri {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.galleri:hover > :not(:hover) {
+  opacity: 0.5;
 }
 
 .galleri > div {
   line-height: 0;
+  display: block;
+  flex: 1 1 300px;
+  transition: opacity 0.2s linear;
 }
 
 .galleri > div img {
-  height: 12.5rem;
   aspect-ratio: 4/3;
+  width: 100%;
   object-fit: cover;
-  border-radius: 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
