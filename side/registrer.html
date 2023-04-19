@@ -4,11 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css">
     <title>Excalibur - Registrér dig</title>
   </head>
 
   <body>
-    
+    <main class="register-main">
+      <section class="register-section">
+        <div class="register-container">
+          <h2 class="register-title">Registrér dig</h2>
+          <form class="register-form">
+            <div>
+              <input id="email" type="email" placeholder="Email" name="email" required />
+            </div>
+            <div>
+              <input id="username" type="text" placeholder="Brugernavn" name="username" required />
+            </div>
+              <input id="password" type="password" placeholder="Adgangskode" name="password" required />
+            </div>
+            <div>
+              <input id="password-repeat" type="password" placeholder="Gentag adgangskode" name="password-repeat" required />
+            </div>
+            <button class="btn-form" type="submit" value="Registrér dig">Registrér dig</button>
+            <a href="">Log ind</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
   </body>
 
 </html>
