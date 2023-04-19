@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/mainstyle.css">
+    <link rel="stylesheet" href="../styles/mainstyle.css" />
     <title>Excalibur - Registrér dig</title>
   </head>
 
@@ -12,27 +12,50 @@
     <main class="register-main">
       <section class="register-section">
         <div class="register-container">
-          <h2 class="register-title">Registrér dig</h2>
-          <form class="register-form">
-            <div>
-              <input id="email" type="email" placeholder="Email" name="email" required />
-            </div>
-            <div>
-              <input id="username" type="text" placeholder="Brugernavn" name="username" required />
-            </div>
-            <div>
-              <input id="password" type="password" placeholder="Adgangskode" name="password" required />
-            </div>
-            <div>
-              <input id="password-repeat" type="password" placeholder="Gentag adgangskode" name="password-repeat" required />
-            </div>
-            <button class="btn-register-form" type="submit" value="Registrér dig">Registrér dig</button>
-            <a href="../side/login.html">Log ind</a>
-          </form>
+          <div class="register-grid-container">
+            <form class="register-form">
+              <h2 class="register-title">Registrér dig</h2>
+              <div class="register-row">
+                <input id="fname" type="text" placeholder="Fornavn" name="fname" required />
+                <input id="lname" type="text" placeholder="Efternavn" name="lname" required />
+              </div>
+              <div>
+                <input id="email" type="email" placeholder="Email" name="email" required />
+              </div>
+              <div class="register-row">
+                <input id="username" type="text" placeholder="Brugernavn" name="username" required />
+                <input id="number" type="number" placeholder="Nummer" name="number" required />
+              </div>
+              <div class="register-row">
+                <input id="password" type="password" placeholder="Adgangskode" name="password" required />
+                <input id="password-repeat" type="password" placeholder="Gentag adgangskode" name="password-repeat" required />
+              </div>
+              <button class="btn-register-form" type="submit" value="Registrér dig">Registrér dig</button>
+              <a href="../side/login.html">Log ind</a>
+            </form>
+            <form class="register-form">
+              <h2 class="register-title">Registrér dig</h2>
+              <div class="register-row">
+                <input id="fname" type="text" placeholder="Fornavn" name="fname" required />
+                <input id="lname" type="text" placeholder="Efternavn" name="lname" required />
+              </div>
+              <div>
+                <input id="email" type="email" placeholder="Email" name="email" required />
+              </div>
+              <div class="register-row">
+                <input id="username" type="text" placeholder="Brugernavn" name="username" required />
+                <input id="number" type="number" placeholder="Nummer" name="number" required />
+              </div>
+              <div class="register-row">
+                <input id="password" type="password" placeholder="Adgangskode" name="password" required />
+                <input id="password-repeat" type="password" placeholder="Gentag adgangskode" name="password-repeat" required />
+              </div>
+              <button class="btn-register-form" type="submit" value="Registrér dig">Registrér dig</button>
+              <a href="../side/login.html">Log ind</a>
+            </form>
+          </div>
         </div>
       </section>
     </main>
-
   </body>
-
 </html>

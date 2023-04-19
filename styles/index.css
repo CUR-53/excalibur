@@ -14,6 +14,7 @@ canvas {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 /* ---------- Forside END ---------- */
 
 /* ---------- Login ---------- */
@@ -69,10 +70,6 @@ canvas {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
-}
-
-#email {
-  margin-top: 30px;
 }
 
 .login-form input {
@@ -147,28 +144,31 @@ canvas {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  min-width: 300px;
+  min-width: 100px;
   height: max-content;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .register-title {
   font-size: 30px;
   color: white;
-  margin-top: 20px;
+  margin: 20px 0 30px;
+}
+
+.register-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin: 30px;
 }
 
 .register-form {
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   color: white;
   flex-direction: column;
   height: 100%;
+  border-radius: 10px;
+  padding: 30px;
 }
 
 .register-form > button {
@@ -177,8 +177,10 @@ canvas {
   margin-bottom: 10px;
 }
 
-#email {
-  margin-top: 30px;
+.register-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .register-form input {
@@ -275,3 +277,54 @@ canvas {
 }
 
 /* ---------- Galleri END ---------- */
+
+/* ---------- Medlem ---------- */
+.medlem-main {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.medlem-container {
+  display: grid;
+  place-content: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.medlem-container > p a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+}
+
+.medlem-container > p a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  margin: 20px;
+}
+
+.pdf {
+  color: black;
+  display: grid;
+  place-content: center;
+}
+
+.pdf:hover {
+  color: white;
+}
+
+/* ---------- Medlem END ---------- */
