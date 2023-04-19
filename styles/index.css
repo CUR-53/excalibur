@@ -66,7 +66,7 @@ canvas {
   height: 100%;
 }
 
-.login-form>button {
+.login-form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -104,7 +104,7 @@ canvas {
   }
 }
 
-.login-form>a {
+.login-form > a {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   cursor: pointer;
@@ -113,7 +113,7 @@ canvas {
   padding-bottom: 20px;
 }
 
-.login-form>a:hover {
+.login-form > a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -144,31 +144,34 @@ canvas {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  min-width: 300px;
+  min-width: 100px;
   height: max-content;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .register-title {
   font-size: 30px;
   color: white;
-  margin-top: 20px;
+  margin: 20px 0 30px;
+}
+
+.register-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin: 30px;
 }
 
 .register-form {
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   color: white;
   flex-direction: column;
   height: 100%;
+  border-radius: 10px;
+  padding: 30px;
 }
 
-.register-form>button {
+.register-form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -212,7 +215,7 @@ canvas {
   }
 }
 
-.register-form>a {
+.register-form > a {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   cursor: pointer;
@@ -221,14 +224,14 @@ canvas {
   padding-bottom: 20px;
 }
 
-.register-form>a:hover {
+.register-form > a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
 /* ---------- Registrer END ---------- */
 
 /* ---------- Galleri ---------- */
-.flow>*+* {
+.flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
 
@@ -244,11 +247,11 @@ canvas {
   gap: 2em;
 }
 
-.galleri>div {
+.galleri > div {
   line-height: 0;
 }
 
-.galleri>div img {
+.galleri > div img {
   height: 12.5rem;
   aspect-ratio: 4/3;
   object-fit: cover;
@@ -279,15 +282,14 @@ canvas {
   padding: 20px;
 }
 
-.medlem-container>p a {
+.medlem-container > p a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: underline;
 }
 
-.medlem-container>p a:hover {
+.medlem-container > p a:hover {
   color: rgba(255, 255, 255, 1);
 }
-
 
 h2 {
   text-align: center;
