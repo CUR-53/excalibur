@@ -72,10 +72,6 @@ canvas {
   margin-bottom: 10px;
 }
 
-#email {
-  margin-top: 30px;
-}
-
 .login-form input {
   width: 100%;
   min-width: 200px;
@@ -178,8 +174,10 @@ canvas {
   margin-bottom: 10px;
 }
 
-#email {
-  margin-top: 30px;
+.register-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .register-form input {
