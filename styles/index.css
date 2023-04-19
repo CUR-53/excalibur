@@ -1,4 +1,3 @@
-@import 'mediaqueries.css';
 /* ---------- Forside ---------- */
 .forside-main {
   height: 6740px;
@@ -123,28 +122,24 @@ canvas {
 /* ---------- Registrer ---------- */
 .register-main {
   position: relative;
-  height: 100vh;
+  height: 105vh;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  overflow: hidden;
 }
 
 .register-section {
   bottom: 0px;
   position: absolute;
   width: 100%;
-  height: 4106px;
+  height: 100%;
   background-image: url('../assets/img/city-road.jpg');
   background-position: center;
   background-size: cover;
-  animation: scroll 95s infinite linear alternate;
 }
 
 .register-container {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  display: grid;
+  place-content: center;
   min-width: 100px;
   height: max-content;
 }
@@ -159,7 +154,7 @@ canvas {
   display: flex;
   flex-direction: row;
   gap: 100px;
-  margin: 30px;
+  margin: 20px 20px 0;
 }
 
 .register-form {
@@ -169,7 +164,7 @@ canvas {
   flex-direction: column;
   height: 100%;
   border-radius: 10px;
-  padding: 3 0px
+  padding: 30px
 }
  
 .register-form > button {
@@ -182,7 +177,6 @@ canvas {
 .register-row {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .register-form input {
