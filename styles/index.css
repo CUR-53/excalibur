@@ -247,6 +247,7 @@ canvas {
 }
 
 .galleri-container {
+  color: white;
   background-color: hsl(0, 0%, 0%);
   margin-top: 2em;
 }
@@ -254,7 +255,7 @@ canvas {
 .galleri {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   overflow: hidden;
 }
 
@@ -263,14 +264,31 @@ canvas {
 }
 
 .galleri > div {
-  line-height: 0;
   display: block;
   flex: 1 1 300px;
   transition: opacity 0.2s linear;
+  position: relative;
+}
+
+.galleri-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  background-color: hsl(0, 0%, 0%, 0.3);
+  width: 100%;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.galleri-content > time {
+  font-size: var(--fs-500, 1rem);
+  color: hsl(0, 0%, 100%, 0.7);
 }
 
 .galleri > div img {
-  aspect-ratio: 4/3;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
