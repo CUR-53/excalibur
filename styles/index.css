@@ -1,3 +1,4 @@
+@import 'mediaqueries.css';
 /* ---------- Forside ---------- */
 .forside-main {
   height: 6740px;
@@ -155,8 +156,8 @@ canvas {
 }
 
 .register-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 100px;
   margin: 30px;
 }
@@ -168,29 +169,36 @@ canvas {
   flex-direction: column;
   height: 100%;
   border-radius: 10px;
-  padding: 30px;
+  padding: 3 0px
 }
-
+ 
 .register-form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .register-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
 }
 
 .register-form input {
   width: 100%;
-  min-width: 200px;
+  min-width: 300px;
   height: 30px;
   border-radius: 5px;
   border: none;
   padding: 5px;
   margin-bottom: 30px;
+}
+
+input::placeholder {
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: rgb(180, 180, 180);
 }
 
 .btn-register-form {
