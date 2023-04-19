@@ -227,3 +227,34 @@ canvas {
 }
 
 /* ---------- Registrer END ---------- */
+
+/* ---------- Galleri ---------- */
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+.galleries-main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.galleri {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+
+.galleri > div {
+  line-height: 0;
+}
+
+.galleri > div img {
+  height: 12.5rem;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Galleri END ---------- */
