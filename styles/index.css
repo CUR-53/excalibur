@@ -1,6 +1,6 @@
 /* ---------- Forside ---------- */
 .forside-main {
-  height: 6740px;
+  height: 6946px;
   background-image: url('../assets/img/city-road.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 }
 
 .castle img {
-  width: 550px;
+  width: 600px;
 }
 
 canvas {
@@ -51,7 +51,7 @@ canvas {
   bottom: 0px;
 
   width: 100%;
-  height: 6740px;
+  height: 6946px;
   background-image: url('../assets/img/city-road.jpg');
   background-position: center;
   background-size: cover;
