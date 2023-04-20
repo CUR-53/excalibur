@@ -205,7 +205,7 @@ canvas {
   flex-direction: column;
 }
 
-.register-form input {
+.register-form input, textarea {
   width: 100%;
   min-width: 290px;
   height: 40px;
@@ -226,6 +226,9 @@ input::placeholder {
   height: 30px;
   border: none;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   cursor: pointer;
 }
@@ -250,6 +253,7 @@ input::placeholder {
 
   font-size: 14px;
   font-weight: 200;
+  display: flex;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/mainstyle.css" />
+    <script src="../scripts/index.js" type="module"></script>
     <title>Excalibur - Registrér dig</title>
   </head>
 
@@ -33,22 +34,25 @@
               <button class="btn-register-form" type="submit" value="Registrér dig">Næste</button>
               <a href="../side/login.html">Log ind</a>
             </form>
-            <form class="register-form" style="display: none">
+            <form class="register-form" id="register-form" style="display: none">
               <h2 class="register-title">Registrér dig</h2>
+              <div>
+                <input id="karakter" type="text" placeholder="Navn på karakteren" name="karakter" required />
+              </div>
               <div class="register-row">
-                <input id="fname" type="text" placeholder="Fornavn" name="fname" required />
-                <input id="lname" type="text" placeholder="Efternavn" name="lname" required />
+                <input id="styrker" type="text" placeholder="Styrker | Stærk, hurtig ..." name="styrker" required />
+                <input id="svagheder" type="text" placeholder="Svagheder | Svag, langsom ..." name="svagheder" required />
+              </div>
+              <div class="register-row">
+                <input id="race" type="text" placeholder="Race" name="race" required />
+                <input id="klasse" type="text" placeholder="Klasse" name="klasse" required />
+              </div>
+              <div class="register-row">
+                <input id="vaaben" type="text" placeholder="Våben" name="vaaben" required />
+                <input id="udstyr" type="text" placeholder="Udstyr" name="udstyr" required />
               </div>
               <div>
-                <input id="email" type="email" placeholder="Email" name="email" required />
-              </div>
-              <div class="register-row">
-                <input id="username" type="text" placeholder="Brugernavn" name="username" required />
-                <input id="number" type="number" placeholder="Nummer" name="number" required />
-              </div>
-              <div class="register-row">
-                <input id="password" type="password" placeholder="Adgangskode" name="password" required />
-                <input id="password-repeat" type="password" placeholder="Gentag adgangskode" name="password-repeat" required />
+                <textarea id="om-karakteren" type="text" placeholder="Om karakteren" name="om-karakteren" required maxlength="200" style="height: 140px"></textarea>
               </div>
               <button class="btn-register-form" type="submit" value="Næste">Registrér dig</button>
               <a href="../side/login.html">Log ind</a>
