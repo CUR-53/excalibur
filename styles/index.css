@@ -79,7 +79,7 @@ canvas {
 }
 
 .login-title {
-  margin-top: 20px;
+  margin: 20px 0 25px;
 
   font-size: 30px;
   color: white;
