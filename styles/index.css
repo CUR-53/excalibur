@@ -79,7 +79,7 @@ canvas {
 }
 
 .login-title {
-  margin-top: 20px;
+  margin: 20px 0 25px;
 
   font-size: 30px;
   color: white;
@@ -94,7 +94,7 @@ canvas {
   color: white;
 }
 
-.login-form > button {
+.login-form>button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -133,7 +133,7 @@ canvas {
   }
 }
 
-.login-form > a {
+.login-form>a {
   padding-bottom: 20px;
 
   font-size: 13px;
@@ -144,7 +144,7 @@ canvas {
   cursor: pointer;
 }
 
-.login-form > a:hover {
+.login-form>a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -208,7 +208,7 @@ canvas {
   color: white;
 }
 
-.register-form > button {
+.register-form>button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -229,6 +229,11 @@ textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
+}
+
+textarea::placeholder{
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(147, 147, 147);
 }
 
 input::placeholder {
@@ -263,7 +268,7 @@ input::placeholder {
   }
 }
 
-.register-form > a {
+.register-form>a {
   width: max-content;
   margin: 5px auto 10px;
 
@@ -276,14 +281,14 @@ input::placeholder {
   cursor: pointer;
 }
 
-.register-form > a:hover {
+.register-form>a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
 /* ---------- Registrer END ---------- */
 
 /* ---------- Galleri ---------- */
-.flow > * + * {
+.flow>*+* {
   margin-top: var(--flow-space, 1em);
 }
 
@@ -323,7 +328,7 @@ input::placeholder {
   filter: brightness(0.5);
 }
 
-.galleri > div {
+.galleri>div {
   display: block;
   flex: 0 1 100px;
 
@@ -364,7 +369,7 @@ input::placeholder {
   color: hsl(0, 0%, 100%, 0.7);
 }
 
-.galleri > div img {
+.galleri>div img {
   width: 100%;
   height: 100%;
 
@@ -388,18 +393,18 @@ input::placeholder {
   background-color: hsl(0, 0%, 0%, 0.5);
 }
 
-.collection-view > div {
+.collection-view>div {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
 }
 
-.collection-view > div > div {
+.collection-view>div>div {
   display: block;
   flex: 1 1 300px;
 }
 
-.collection-view > div > div > img {
+.collection-view>div>div>img {
   width: 100%;
   height: 100%;
 
@@ -411,42 +416,46 @@ input::placeholder {
 
 /* ---------- Medlem ---------- */
 .medlem-main {
+  position: relative;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .medlem-container {
-  display: grid;
+  /* display: grid; */
 
-  position: fixed;
+  /* position: fixed;
   left: 50%;
-  top: 50%;
+  top: 50%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  max-width: 800px;
-  min-width: 375px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
+  /* max-width: 800px;
+  min-width: 350px; */
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  background-color: white;
 
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 
-  place-content: center;
+  /* place-content: center; */
 }
 
-.medlem-container > p a {
-  text-decoration: underline;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.medlem-container > p a:hover {
-  color: rgba(255, 255, 255, 1);
-}
-
-h2 {
+.medlem-title {
   margin-top: 20px;
-
   text-align: center;
+}
+
+.medlem-container>p a {
+  text-decoration: underline;
+  color: black;
+}
+
+.medlem-container>p a:hover {
+  color: lightgrey;
 }
 
 p {
@@ -454,15 +463,26 @@ p {
 }
 
 .pdf {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   color: black;
-
-  place-content: center;
 }
 
-.pdf:hover {
-  color: white;
+.medlem-container > button {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.medlem-container > button a {
+  color: black;
+  text-decoration: none;
 }
 
 /* ---------- Medlem END ---------- */
