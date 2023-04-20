@@ -5,21 +5,23 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  position: relative;
+  width: 100%;
   font-family: 'Open Sans', sans-serif;
 }
 
 .castle {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   position: absolute;
-  bottom: -5725px;
+  bottom: 0px;
+  height: 100%;
   width: 100%;
 }
 
 .castle img {
-  width: 29%;
+  width: 550px;
 }
 
 canvas {
