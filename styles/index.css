@@ -9,6 +9,18 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.castle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -5600px;
+  width: 100%;
+}
+
+.castle > img {
+}
+
 canvas {
   position: fixed;
   left: 50%;
@@ -205,7 +217,8 @@ canvas {
   flex-direction: column;
 }
 
-.register-form input, textarea {
+.register-form input,
+textarea {
   width: 100%;
   min-width: 290px;
   height: 40px;
