@@ -1,13 +1,21 @@
 /* ---------- Forside ---------- */
 .forside-main {
-  height: 6946px;
+  height: 10000px;
   background-image: url('../assets/img/city-road.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
+  overflow: hidden;
   font-family: 'Open Sans', sans-serif;
+}
+
+.forside-container {
+  height: 100%;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .castle {
@@ -21,7 +29,7 @@
 }
 
 .castle img {
-  width: 600px;
+  height: 80vh;
 }
 
 canvas {
@@ -30,6 +38,40 @@ canvas {
   top: 50%;
 
   transform: translate(-50%, -50%);
+}
+
+.galleri-link a,
+.arrangement-link a,
+.kontakt-link a,
+.castle-link a {
+  /* border: solid red 1px; */
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.galleri-link a {
+  padding: 300px 220px;
+  bottom: 2990px;
+  right: -165px;
+}
+
+.arrangement-link a {
+  padding: 300px 220px;
+  bottom: 1960px;
+  left: -170px;
+}
+
+.kontakt-link a {
+  padding: 300px 270px;
+  bottom: 1660px;
+  right: -280px;
+}
+
+.castle-link a {
+  padding: 410px 350px;
+  bottom: 0px;
+  right: 240px;
 }
 
 /* ---------- Forside END ---------- */
@@ -94,7 +136,7 @@ canvas {
   color: white;
 }
 
-.login-form>button {
+.login-form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -133,7 +175,7 @@ canvas {
   }
 }
 
-.login-form>a {
+.login-form > a {
   padding-bottom: 20px;
 
   font-size: 13px;
@@ -144,7 +186,7 @@ canvas {
   cursor: pointer;
 }
 
-.login-form>a:hover {
+.login-form > a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -208,7 +250,7 @@ canvas {
   color: white;
 }
 
-.register-form>button {
+.register-form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -231,7 +273,7 @@ textarea {
   border-radius: 5px;
 }
 
-textarea::placeholder{
+textarea::placeholder {
   font-family: 'Open Sans', sans-serif;
   color: rgb(147, 147, 147);
 }
@@ -268,7 +310,7 @@ input::placeholder {
   }
 }
 
-.register-form>a {
+.register-form > a {
   width: max-content;
   margin: 5px auto 10px;
 
@@ -281,14 +323,14 @@ input::placeholder {
   cursor: pointer;
 }
 
-.register-form>a:hover {
+.register-form > a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
 /* ---------- Registrer END ---------- */
 
 /* ---------- Galleri ---------- */
-.flow>*+* {
+.flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
 
@@ -328,7 +370,7 @@ input::placeholder {
   filter: brightness(0.5);
 }
 
-.galleri>div {
+.galleri > div {
   display: block;
   flex: 0 1 100px;
 
@@ -369,7 +411,7 @@ input::placeholder {
   color: hsl(0, 0%, 100%, 0.7);
 }
 
-.galleri>div img {
+.galleri > div img {
   width: 100%;
   height: 100%;
 
@@ -393,18 +435,18 @@ input::placeholder {
   background-color: hsl(0, 0%, 0%, 0.5);
 }
 
-.collection-view>div {
+.collection-view > div {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
 }
 
-.collection-view>div>div {
+.collection-view > div > div {
   display: block;
   flex: 1 1 300px;
 }
 
-.collection-view>div>div>img {
+.collection-view > div > div > img {
   width: 100%;
   height: 100%;
 
@@ -449,12 +491,12 @@ input::placeholder {
   text-align: center;
 }
 
-.medlem-container>p a {
+.medlem-container > p a {
   text-decoration: underline;
   color: black;
 }
 
-.medlem-container>p a:hover {
+.medlem-container > p a:hover {
   color: lightgrey;
 }
 
