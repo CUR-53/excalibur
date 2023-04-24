@@ -1,64 +1,64 @@
 @media only screen and (min-width: 768px) {
-  .register-container {
+  .register_container {
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  .medlem-container {
+  .medlem_container {
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
 
-  .register-row {
+  .register_row {
     flex-direction: row;
     gap: 20px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .register-main {
+  .register_main {
     overflow: hidden;
     height: 100vh;
   }
 
-  .register-section {
+  .register_section {
     height: 4106px;
     position: absolute;
     animation: scroll 95s infinite linear alternate;
   }
 
-  .galleri-link a,
-  .arrangement-link a,
-  .kontakt-link a,
-  .castle-link a {
+  .galleri_link a,
+  .arrangement_link a,
+  .kontakt_link a,
+  .castle_link a {
     /* border: solid red 1px; */
     position: absolute;
     z-index: 1;
     cursor: pointer;
   }
 
-  .galleri-link a {
+  .galleri_link a {
     padding: 300px 220px;
     bottom: 2990px;
     right: -165px;
   }
 
-  .arrangement-link a {
+  .arrangement_link a {
     padding: 300px 220px;
     bottom: 1960px;
     left: -170px;
   }
 
-  .kontakt-link a {
+  .kontakt_link a {
     padding: 300px 270px;
     bottom: 1660px;
     right: -280px;
   }
 
-  .castle-link a {
+  .castle_link a {
     padding: 410px 350px;
     bottom: 0px;
     right: 240px;

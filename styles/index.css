@@ -1,5 +1,5 @@
 /* ---------- Forside ---------- */
-.forside-main {
+.forside_main {
   height: 10000px;
   background-image: url('../assets/img/city-road.jpg');
   background-position: center;
@@ -11,7 +11,7 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-.forside-container {
+.forside_container {
   height: 100%;
   position: relative;
   max-width: 1200px;
@@ -43,7 +43,7 @@ canvas {
 /* ---------- Forside END ---------- */
 
 /* ---------- Login ---------- */
-.login-main {
+.login_main {
   position: relative;
 
   width: 100%;
@@ -54,7 +54,7 @@ canvas {
   overflow: hidden;
 }
 
-.login-section {
+.login_section {
   position: absolute;
   bottom: 0px;
 
@@ -67,7 +67,7 @@ canvas {
   animation: scroll 95s infinite linear alternate;
 }
 
-.login-container {
+.login_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,14 +86,14 @@ canvas {
   transform: translate(-50%, -50%);
 }
 
-.login-title {
+.login_title {
   margin: 20px 0 25px;
 
   font-size: 30px;
   color: white;
 }
 
-.login-form {
+.login_form {
   display: flex;
   flex-direction: column;
 
@@ -102,13 +102,13 @@ canvas {
   color: white;
 }
 
-.login-form > button {
+.login_form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 
-.login-form input {
+.login_form input {
   width: 100%;
   min-width: 200px;
   height: 30px;
@@ -118,7 +118,7 @@ canvas {
   border-radius: 5px;
 }
 
-.btn-form {
+.btn_form {
   width: 100%;
   height: 30px;
   border: none;
@@ -127,7 +127,7 @@ canvas {
   cursor: pointer;
 }
 
-.btn-form:hover {
+.btn_form:hover {
   background-color: lightgray;
 }
 
@@ -141,7 +141,7 @@ canvas {
   }
 }
 
-.login-form > a {
+.login_form > a {
   padding-bottom: 20px;
 
   font-size: 13px;
@@ -152,14 +152,14 @@ canvas {
   cursor: pointer;
 }
 
-.login-form > a:hover {
+.login_form > a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
 /* ---------- Login END ---------- */
 
 /* ---------- Registrer ---------- */
-.register-main {
+.register_main {
   position: relative;
 
   width: 100%;
@@ -168,7 +168,7 @@ canvas {
   font-family: 'Open Sans', sans-serif;
 }
 
-.register-section {
+.register_section {
   bottom: 0px;
 
   width: 100%;
@@ -179,7 +179,7 @@ canvas {
   background-size: cover;
 }
 
-.register-container {
+.register_container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,14 +188,14 @@ canvas {
   height: 100%;
 }
 
-.register-title {
+.register_title {
   margin: 10px 0 40px;
 
   font-size: 30px;
   color: white;
 }
 
-.register-grid-container {
+.register_grid_container {
   display: flex;
   flex-direction: row;
 
@@ -204,7 +204,7 @@ canvas {
   gap: 100px;
 }
 
-.register-form {
+.register_form {
   display: flex;
   flex-direction: column;
 
@@ -216,19 +216,19 @@ canvas {
   color: white;
 }
 
-.register-form > button {
+.register_form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-.register-row {
+.register_row {
   display: flex;
   flex-direction: column;
 }
 
-.register-form input,
+.register_form input,
 textarea {
   width: 100%;
   min-width: 290px;
@@ -250,7 +250,7 @@ input::placeholder {
   color: rgb(147, 147, 147);
 }
 
-.btn-register-form {
+.btn_register_form {
   width: 100%;
   height: 30px;
   border: none;
@@ -262,7 +262,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.btn-register-form:hover {
+.btn_register_form:hover {
   background-color: lightgray;
 }
 
@@ -276,7 +276,7 @@ input::placeholder {
   }
 }
 
-.register-form > a {
+.register_form > a {
   width: max-content;
   margin: 5px auto 10px;
 
@@ -289,7 +289,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.register-form > a:hover {
+.register_form > a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -300,7 +300,7 @@ input::placeholder {
   margin-top: var(--flow-space, 1em);
 }
 
-.galleries-body {
+.galleries_body {
   margin: 0 auto;
   min-height: 100vh;
   padding: 2rem;
@@ -308,16 +308,16 @@ input::placeholder {
   max-width: 800px;
 }
 
-.galleri-container {
+.galleri_container {
   color: white;
 }
 
-.galleri-paper {
+.galleri_paper {
   position: absolute;
   inset: 0 0 0 0;
 }
 
-.galleri-paper > img {
+.galleri_paper > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -356,7 +356,7 @@ input::placeholder {
   }
 }
 
-.galleri-content {
+.galleri_content {
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -372,7 +372,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.galleri-content > time {
+.galleri_content > time {
   font-size: var(--fs-400, 1rem);
   color: hsl(0, 0%, 100%, 0.7);
 }
@@ -385,13 +385,13 @@ input::placeholder {
   object-fit: cover;
 }
 
-.collection-view {
+.collection_view {
   display: none;
   opacity: 0;
   transition: opacity 0.2s linear;
 }
 
-.collection-view.active {
+.collection_view.active {
   position: fixed;
   inset: 0 0 0 0;
   display: grid;
@@ -401,18 +401,18 @@ input::placeholder {
   background-color: hsl(0, 0%, 0%, 0.5);
 }
 
-.collection-view > div {
+.collection_view > div {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
 }
 
-.collection-view > div > div {
+.collection_view > div > div {
   display: block;
   flex: 1 1 300px;
 }
 
-.collection-view > div > div > img {
+.collection_view > div > div > img {
   width: 100%;
   height: 100%;
 
@@ -423,14 +423,14 @@ input::placeholder {
 /* ---------- Galleri END ---------- */
 
 /* ---------- Medlem ---------- */
-.medlem-main {
+.medlem_main {
   position: relative;
   width: 100%;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
 }
 
-.medlem-container {
+.medlem_container {
   /* display: grid; */
 
   /* position: fixed;
@@ -452,17 +452,17 @@ input::placeholder {
   /* place-content: center; */
 }
 
-.medlem-title {
+.medlem_title {
   margin-top: 20px;
   text-align: center;
 }
 
-.medlem-container > p a {
+.medlem_container > p a {
   text-decoration: underline;
   color: black;
 }
 
-.medlem-container > p a:hover {
+.medlem_container > p a:hover {
   color: lightgrey;
 }
 
@@ -478,7 +478,7 @@ p {
   color: black;
 }
 
-.medlem-container > button {
+.medlem_container > button {
   margin-top: 20px;
   width: 200px;
   height: 50px;
@@ -488,7 +488,7 @@ p {
   cursor: pointer;
 }
 
-.medlem-container > button a {
+.medlem_container > button a {
   color: black;
   text-decoration: none;
 }

@@ -10,51 +10,59 @@
   </head>
 
   <body>
-    <main class="register-main">
-      <section class="register-section">
-        <div class="register-container">
-          <div class="register-grid-container">
-            <form class="register-form">
-              <h2 class="register-title">Registrér dig</h2>
-              <div class="register-row">
+    <main class="register_main">
+      <section class="register_section">
+        <div class="register_container">
+          <div class="register_grid_container">
+            <form class="register_form">
+              <h2 class="register_title">Registrér dig</h2>
+              <div class="register_row">
                 <input id="fname" type="text" placeholder="Fornavn" name="fname" required />
                 <input id="lname" type="text" placeholder="Efternavn" name="lname" required />
               </div>
               <div>
                 <input id="email" type="email" placeholder="Email" name="email" required />
               </div>
-              <div class="register-row">
+              <div class="register_row">
                 <input id="username" type="text" placeholder="Brugernavn" name="username" required />
                 <input id="number" type="number" placeholder="Telefon nummer" name="number" required />
               </div>
-              <div class="register-row">
+              <div class="register_row">
                 <input id="password" type="password" placeholder="Adgangskode" name="password" required />
-                <input id="password-repeat" type="password" placeholder="Gentag adgangskode" name="password-repeat" required />
+                <input id="password_repeat" type="password" placeholder="Gentag adgangskode" name="password_repeat" required />
               </div>
-              <button class="btn-register-form" type="submit" value="Registrér dig">Næste</button>
+              <button class="btn_register_form" type="submit" value="Registrér dig">Næste</button>
               <a href="../side/login.html">Log ind</a>
             </form>
-            <form class="register-form" id="register-form" style="display: none">
-              <h2 class="register-title">Registrér dig</h2>
+            <form class="register_form" id="register_form" style="display: none">
+              <h2 class="register_title">Registrér dig</h2>
               <div>
                 <input id="karakter" type="text" placeholder="Navn på karakteren" name="karakter" required />
               </div>
-              <div class="register-row">
+              <div class="register_row">
                 <input id="styrker" type="text" placeholder="Styrker | Stærk, hurtig ..." name="styrker" required />
                 <input id="svagheder" type="text" placeholder="Svagheder | Svag, langsom ..." name="svagheder" required />
               </div>
-              <div class="register-row">
+              <div class="register_row">
                 <input id="race" type="text" placeholder="Race" name="race" required />
                 <input id="klasse" type="text" placeholder="Klasse" name="klasse" required />
               </div>
-              <div class="register-row">
+              <div class="register_row">
                 <input id="vaaben" type="text" placeholder="Våben" name="vaaben" required />
                 <input id="udstyr" type="text" placeholder="Udstyr" name="udstyr" required />
               </div>
               <div>
-                <textarea id="om-karakteren" type="text" placeholder="Om karakteren" name="om-karakteren" required maxlength="200" style="height: 140px"></textarea>
+                <textarea
+                  id="om_arakteren"
+                  type="text"
+                  placeholder="Om karakteren"
+                  name="om-karakteren"
+                  required
+                  maxlength="200"
+                  style="height: 140px"
+                ></textarea>
               </div>
-              <button class="btn-register-form" type="submit" value="Næste">Registrér dig</button>
+              <button class="btn_register_form" type="submit" value="Næste">Registrér dig</button>
               <a href="../side/login.html">Log ind</a>
             </form>
           </div>
