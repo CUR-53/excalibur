@@ -354,25 +354,12 @@ input::placeholder {
 }
 
 .medlem_container {
-  /* display: grid; */
-
-  /* position: fixed;
-  left: 50%;
-  top: 50%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* max-width: 800px;
-  min-width: 350px; */
-  /* margin: 0 auto; */
-  /* padding: 20px; */
+  padding: 30px;
   background-color: white;
-
-  /* transform: translate(-50%, -50%); */
-
-  /* place-content: center; */
 }
 
 .medlem_title {
@@ -390,7 +377,7 @@ input::placeholder {
 }
 
 p {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .pdf {
