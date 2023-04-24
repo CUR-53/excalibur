@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/mainstyle.css" />
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <main class="kontakt_main">
+      <section class="kontakt_section">
+        <div class="kontakt_container">
+            <img src="https://picsum.photos/200" alt="">
+            <form class="kontakt_form">
+              <h2 class="kontakt_title">Kontakt</h2>
+              <div class="kontakt_row">
+                <input id="fname" type="text" placeholder="Fornavn" name="fname" required />
+                <input id="lname" type="text" placeholder="Efternavn" name="lname" required />
+              </div>
+              <div>
+                <input id="email" type="email" placeholder="Email" name="email" required />
+              </div>
+              <div>
+                <input id="number" type="number" placeholder="Telefon nummer" name="number" required />
+              </div>
+              <div>
+                <textarea id="message" type="text" placeholder="Besked" name="message" required maxlength="200" style="height: 140px"></textarea>
+              </div>
+              <button class="kontakt_btn" type="submit" value="Send">Send</button>
+            </form>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>
