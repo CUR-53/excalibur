@@ -302,6 +302,7 @@ input::placeholder {
 }
 
 .galleries_body {
+<<<<<<< Updated upstream
   margin: 0 auto;
   min-height: 100vh;
   padding: 2rem;
@@ -419,6 +420,12 @@ input::placeholder {
 
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   object-fit: cover;
+=======
+  min-height: 100vh;
+  background-image: url('../assets/img/city-road.jpg');
+  background-position: top;
+  background-size: cover;
+>>>>>>> Stashed changes
 }
 
 /* ---------- Galleri END ---------- */
