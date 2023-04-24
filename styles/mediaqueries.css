@@ -29,4 +29,38 @@
     position: absolute;
     animation: scroll 95s infinite linear alternate;
   }
+
+  .galleri-link a,
+  .arrangement-link a,
+  .kontakt-link a,
+  .castle-link a {
+    /* border: solid red 1px; */
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .galleri-link a {
+    padding: 300px 220px;
+    bottom: 2990px;
+    right: -165px;
+  }
+
+  .arrangement-link a {
+    padding: 300px 220px;
+    bottom: 1960px;
+    left: -170px;
+  }
+
+  .kontakt-link a {
+    padding: 300px 270px;
+    bottom: 1660px;
+    right: -280px;
+  }
+
+  .castle-link a {
+    padding: 410px 350px;
+    bottom: 0px;
+    right: 240px;
+  }
 }
