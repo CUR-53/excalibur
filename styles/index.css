@@ -102,7 +102,7 @@ canvas {
   color: white;
 }
 
-.login_form > button {
+.login_form>button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -141,7 +141,7 @@ canvas {
   }
 }
 
-.login_form > a {
+.login_form>a {
   padding-bottom: 20px;
 
   font-size: 13px;
@@ -152,7 +152,7 @@ canvas {
   cursor: pointer;
 }
 
-.login_form > a:hover {
+.login_form>a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -217,7 +217,7 @@ canvas {
   color: white;
 }
 
-.register_form > button {
+.register_form>button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -277,7 +277,7 @@ input::placeholder {
   }
 }
 
-.register_form > a {
+.register_form>a {
   width: max-content;
   margin: 5px auto 10px;
 
@@ -290,14 +290,14 @@ input::placeholder {
   cursor: pointer;
 }
 
-.register_form > a:hover {
+.register_form>a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
 /* ---------- Registrer END ---------- */
 
 /* ---------- Galleri ---------- */
-.flow > * + * {
+.flow>*+* {
   margin-top: var(--flow-space, 1em);
 }
 
@@ -318,7 +318,7 @@ input::placeholder {
   inset: 0 0 0 0;
 }
 
-.galleri_paper > img {
+.galleri_paper>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -333,11 +333,11 @@ input::placeholder {
   gap: 2rem;
 }
 
-.galleri:hover > :not(:hover) {
+.galleri:hover> :not(:hover) {
   filter: brightness(0.5);
 }
 
-.galleri > div {
+.galleri>div {
   display: block;
   flex: 0 1 100px;
 
@@ -347,7 +347,7 @@ input::placeholder {
 }
 
 @media (min-width: 685px) {
-  .galleri > div {
+  .galleri>div {
     display: block;
     flex: 0 1 200px;
 
@@ -373,12 +373,12 @@ input::placeholder {
   cursor: pointer;
 }
 
-.galleri_content > time {
+.galleri_content>time {
   font-size: var(--fs-400, 1rem);
   color: hsl(0, 0%, 100%, 0.7);
 }
 
-.galleri > div img {
+.galleri>div img {
   width: 100%;
   height: 100%;
 
@@ -402,18 +402,18 @@ input::placeholder {
   background-color: hsl(0, 0%, 0%, 0.5);
 }
 
-.collection_view > div {
+.collection_view>div {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
 }
 
-.collection_view > div > div {
+.collection_view>div>div {
   display: block;
   flex: 1 1 300px;
 }
 
-.collection_view > div > div > img {
+.collection_view>div>div>img {
   width: 100%;
   height: 100%;
 
@@ -458,12 +458,12 @@ input::placeholder {
   text-align: center;
 }
 
-.medlem_container > p a {
+.medlem_container>p a {
   text-decoration: underline;
   color: black;
 }
 
-.medlem_container > p a:hover {
+.medlem_container>p a:hover {
   color: lightgrey;
 }
 
@@ -479,7 +479,7 @@ p {
   color: black;
 }
 
-.medlem_container > button {
+.medlem_container>button {
   margin-top: 20px;
   width: 200px;
   height: 50px;
@@ -489,9 +489,80 @@ p {
   cursor: pointer;
 }
 
-.medlem_container > button a {
+.medlem_container>button a {
   color: black;
   text-decoration: none;
 }
 
 /* ---------- Medlem END ---------- */
+
+/* ---------- Kontakt ---------- */
+.kontakt_main {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.kontakt_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/img/city-road.jpg');
+  background-position: top;
+  background-size: cover;
+}
+
+.kontakt_container {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.kontakt_title {
+  margin: 10px 0 40px;
+  font-size: 30px;
+  color: white;
+}
+
+.kontakt_container>img {
+  display: none;
+}
+
+.kontakt_form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.kontakt_form>button {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.kontakt_form input,
+textarea {
+  width: 100%;
+  min-width: 290px;
+  height: 40px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.kontakt_btn {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.kontakt_btn:hover {
+  background-color: lightgray;
+}
+
+/* ---------- Kontakt END ---------- */
