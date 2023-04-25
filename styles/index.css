@@ -380,7 +380,7 @@ input::placeholder {
 }
 
 .bg-city-road {
-  background-image: url("assets/img/city-road.jpg");
+  background-image: url("../assets/img/city-road.jpg");
 }
 
 .bg-cover {
