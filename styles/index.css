@@ -1,21 +1,25 @@
 /* ---------- Forside ---------- */
 .hero_section {
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-  z-index: 2;
-  position: relative;
   display: grid;
+
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 100vh;
+  background-color: #769914;
+
   place-content: center;
   overflow: hidden;
 }
 
 .hero_container {
   display: grid;
+  grid-template-columns: 1fr;
+
   width: 100%;
   height: 100%;
   padding: 0px 20px;
-  grid-template-columns: 1fr;
 }
 
 .hero_container div {
@@ -24,11 +28,14 @@
 
 .nav_section {
   position: fixed;
-  z-index: 3;
-  width: 100%;
   top: 0;
-  font-family: var(--ff-secondary);
+  z-index: 3;
+
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
+
+  font-family: var(--ff-secondary);
+
   box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.15);
@@ -36,10 +43,11 @@
 
 .nav_container {
   display: flex;
-  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
   padding: 20px 30px;
 }
 
@@ -48,16 +56,18 @@
 }
 
 .forside_main {
+  position: relative;
+
+  width: 100%;
   height: 7500px;
   background-image: url('../assets/img/city-road.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
 
   font-family: 'Open Sans', sans-serif;
+
+  overflow: hidden;
 }
 
 #canvas {
@@ -65,21 +75,24 @@
 }
 
 .forside_container {
-  height: 100%;
   position: relative;
+
   max-width: 1200px;
+  height: 100%;
   margin: 0 auto;
 }
 
 .castle {
   display: flex;
-  justify-content: center;
   align-items: flex-end;
+  justify-content: center;
+
   position: absolute;
   bottom: 0px;
-  height: 100%;
-  width: 100%;
   z-index: 3;
+
+  width: 100%;
+  height: 100%;
 }
 
 .castle img {
@@ -234,13 +247,14 @@ canvas {
 }
 
 .register_container {
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 
   min-width: 100px;
   height: 100%;
+
+  text-align: center;
 }
 
 .register_title {
@@ -306,13 +320,14 @@ input::placeholder {
 }
 
 .btn_register_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   height: 30px;
   border: none;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   cursor: pointer;
 }
@@ -332,12 +347,13 @@ input::placeholder {
 }
 
 .register_form > a {
+  display: flex;
+
   width: max-content;
   margin: 5px auto 10px;
 
   font-size: 14px;
   font-weight: 200;
-  display: flex;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
 
@@ -425,8 +441,9 @@ input::placeholder {
 }
 
 .bg-black {
-  --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+
+  --tw-bg-opacity: 1;
 }
 
 .bg-opacity-50 {
@@ -458,33 +475,15 @@ input::placeholder {
   padding: 1rem;
 }
 
-@media (min-width: 640px) {
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:grid-flow-row {
-    grid-auto-flow: row;
-  }
-
-  .md\:grid-flow-col {
-    grid-auto-flow: column;
-  }
-}
-
 /* ---------- Galleri END ---------- */
 
 /* ---------- Medlem ---------- */
 .medlem_main {
   position: relative;
+
   width: 100%;
   height: 100%;
+
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -493,12 +492,14 @@ input::placeholder {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   padding: 30px;
   background-color: white;
 }
 
 .medlem_title {
   margin-top: 20px;
+
   text-align: center;
 }
 
@@ -517,25 +518,26 @@ p {
 
 .pdf {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   color: black;
 }
 
 .medlem_container > button {
-  margin-top: 20px;
   width: 200px;
   height: 50px;
-  background-color: orange;
+  margin-top: 20px;
   border: none;
   border-radius: 5px;
+  background-color: orange;
+
   cursor: pointer;
 }
 
 .medlem_container > button a {
-  color: black;
   text-decoration: none;
+  color: black;
 }
 
 /* ---------- Medlem END ---------- */
@@ -544,13 +546,15 @@ p {
 .kontakt_main {
   width: 100%;
   height: 100%;
+
   font-family: 'Open Sans', sans-serif;
 }
 
 .kontakt_section {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
   background-image: url('../assets/img/city-road.jpg');
   background-position: top;
   background-size: cover;
@@ -564,6 +568,7 @@ p {
 
 .kontakt_title {
   margin: 10px 0 40px;
+
   font-size: 30px;
   color: white;
 }
@@ -575,10 +580,12 @@ p {
 .kontakt_form {
   display: flex;
   flex-direction: column;
-  text-align: center;
+
   padding: 30px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.6);
+
+  text-align: center;
 }
 
 .kontakt_form > button {
@@ -602,6 +609,7 @@ textarea {
   height: 30px;
   border: none;
   border-radius: 5px;
+
   cursor: pointer;
 }
 

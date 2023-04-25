@@ -1,3 +1,13 @@
+@media (min-width: 640px) {
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .register_container {
     position: fixed;
@@ -31,6 +41,14 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+  }
+
+  .md\:grid-flow-row {
+    grid-auto-flow: row;
+  }
+
+  .md\:grid-flow-col {
+    grid-auto-flow: column;
   }
 }
 
