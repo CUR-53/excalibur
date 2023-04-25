@@ -604,13 +604,9 @@ p {
 
 .kontakt_title {
   margin: 10px 0 40px;
-
+  text-align: left;
   font-size: 30px;
   color: white;
-}
-
-.kontakt_container > img {
-  display: none;
 }
 
 .kontakt_form {
