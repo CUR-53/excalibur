@@ -57,34 +57,38 @@
   }
 
   .galleri_link a {
-    padding: 300px 220px;
-    bottom: 2990px;
-    right: -165px;
+    padding: 220px 170px;
+    bottom: 2240px;
+    right: 20px;
+    border: red solid 1px;
   }
 
   .arrangement_link a {
-    padding: 300px 220px;
-    bottom: 1960px;
-    left: -170px;
+    padding: 225px 180px;
+    bottom: 1470px;
+    left: 10px;
+    border: red solid 1px;
   }
 
   .kontakt_link a {
-    padding: 300px 270px;
-    bottom: 1660px;
-    right: -280px;
+    padding: 230px 210px;
+    bottom: 1245px;
+    right: -70px;
+    border: red solid 1px;
   }
 
   .castle_link a {
     padding: 410px 350px;
     bottom: 0px;
     right: 240px;
+    border: red solid 1px;
   }
 
   .medlem_container {
     width: 1200px;
   }
 
-  .kontakt_container>img {
+  .kontakt_container > img {
     display: block;
     width: 565px;
     border-radius: 10px;

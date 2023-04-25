@@ -1,14 +1,40 @@
 /* ---------- Forside ---------- */
+.hero_section {
+  height: 100vh;
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+.hero_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.hero_container > div {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+}
+
 .forside_main {
-  height: 10000px;
+  height: 7500px;
   background-image: url('../assets/img/city-road.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 100%;
   overflow: hidden;
+  width: 100%;
+
   font-family: 'Open Sans', sans-serif;
+}
+
+#canvas {
+  z-index: 1;
 }
 
 .forside_container {
@@ -26,6 +52,7 @@
   bottom: 0px;
   height: 100%;
   width: 100%;
+  z-index: 3;
 }
 
 .castle img {
@@ -102,7 +129,7 @@ canvas {
   color: white;
 }
 
-.login_form>button {
+.login_form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -141,7 +168,7 @@ canvas {
   }
 }
 
-.login_form>a {
+.login_form > a {
   padding-bottom: 20px;
 
   font-size: 13px;
@@ -152,7 +179,7 @@ canvas {
   cursor: pointer;
 }
 
-.login_form>a:hover {
+.login_form > a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -217,7 +244,7 @@ canvas {
   color: white;
 }
 
-.register_form>button {
+.register_form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -277,7 +304,7 @@ input::placeholder {
   }
 }
 
-.register_form>a {
+.register_form > a {
   width: max-content;
   margin: 5px auto 10px;
 
@@ -290,7 +317,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.register_form>a:hover {
+.register_form > a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -380,7 +407,7 @@ input::placeholder {
 }
 
 .bg-city-road {
-  background-image: url("../assets/img/city-road.jpg");
+  background-image: url('../assets/img/city-road.jpg');
 }
 
 .bg-cover {
@@ -393,7 +420,7 @@ input::placeholder {
 
 .object-cover {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .p-8 {
@@ -449,12 +476,12 @@ input::placeholder {
   text-align: center;
 }
 
-.medlem_container>p a {
+.medlem_container > p a {
   text-decoration: underline;
   color: black;
 }
 
-.medlem_container>p a:hover {
+.medlem_container > p a:hover {
   color: lightgrey;
 }
 
@@ -470,7 +497,7 @@ p {
   color: black;
 }
 
-.medlem_container>button {
+.medlem_container > button {
   margin-top: 20px;
   width: 200px;
   height: 50px;
@@ -480,7 +507,7 @@ p {
   cursor: pointer;
 }
 
-.medlem_container>button a {
+.medlem_container > button a {
   color: black;
   text-decoration: none;
 }
@@ -515,7 +542,7 @@ p {
   color: white;
 }
 
-.kontakt_container>img {
+.kontakt_container > img {
   display: none;
 }
 
@@ -528,7 +555,7 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.kontakt_form>button {
+.kontakt_form > button {
   max-width: 100px;
   margin: 0 auto;
 }
