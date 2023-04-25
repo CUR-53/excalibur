@@ -105,11 +105,4 @@
   .medlem_container {
     width: 1200px;
   }
-
-  .kontakt_container > img {
-    display: block;
-    width: 565px;
-    border-radius: 10px;
-    margin-right: 20px;
-  }
 }
