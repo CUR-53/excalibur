@@ -612,7 +612,7 @@ p {
 
 .kontakt_title {
   margin: 10px 0 40px;
-  text-align: left;
+  text-align: center;
   font-size: 30px;
   color: white;
 }
@@ -624,8 +624,6 @@ p {
   padding: 30px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.6);
-
-  text-align: center;
 }
 
 .kontakt_form > button {
