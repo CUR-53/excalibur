@@ -7,6 +7,7 @@
   position: relative;
   display: grid;
   place-content: center;
+  overflow: hidden;
 }
 
 .hero_container {
