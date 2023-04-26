@@ -538,7 +538,7 @@ input::placeholder {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  max-width: 900px;
   padding: 30px;
   background-color: white;
 }
