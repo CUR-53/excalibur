@@ -720,14 +720,12 @@ li:nth-child(10) {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
 }
 
 .foraeldre_container {
   background-color: hsl(0, 0%, 0%, 0.75);
   max-width: 900px;
   padding: 3rem;
-  border-radius: 1rem;
 }
 
 .foraeldre_container > p {
@@ -745,5 +743,13 @@ li:nth-child(10) {
   font-size: 2rem;
 }
 
+@media (min-width: 600px) {
+  .foraeldre_section {
+    padding: 3rem;
+  }
+  .foraeldre_container {
+    border-radius: 1rem;
+  }
+}
 
 /* ---------- Forældreinfo END ---------- */
