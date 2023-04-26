@@ -98,7 +98,7 @@
     right: 240px;
   }
 
-  .medlem_container {
-    width: 1200px;
+  .login_section {
+    animation: scroll 95s infinite linear alternate;
   }
 }
