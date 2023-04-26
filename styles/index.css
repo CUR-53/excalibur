@@ -210,7 +210,6 @@ canvas {
   background-position: center;
   background-size: cover;
 
-  animation: scroll 95s infinite linear alternate;
 }
 
 .login_container {
@@ -275,16 +274,6 @@ canvas {
 
 .btn_form:hover {
   background-color: lightgray;
-}
-
-@keyframes scroll {
-  0% {
-    top: 0;
-  }
-
-  100% {
-    top: -3000px;
-  }
 }
 
 .login_form > a {
@@ -417,11 +406,11 @@ input::placeholder {
 
 @keyframes scroll {
   0% {
-    top: 0;
+    top: -1000px;
   }
 
   100% {
-    top: -3000px;
+    top: -4000px;
   }
 }
 

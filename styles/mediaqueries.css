@@ -101,4 +101,8 @@
     right: 240px;
     border: red solid 1px;
   }
+
+  .login_section {
+    animation: scroll 95s infinite linear alternate;
+  }
 }
