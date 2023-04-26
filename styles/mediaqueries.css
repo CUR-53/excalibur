@@ -16,14 +16,6 @@
     transform: translate(-50%, -50%);
   }
 
-  .medlem_container {
-    width: 100%;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   .register_row {
     flex-direction: row;
     gap: 20px;
