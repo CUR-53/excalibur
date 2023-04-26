@@ -450,7 +450,7 @@ input::placeholder {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 40px;
   border-radius: 20px;
-  width: 50vw;
+  width: 1000px;
   height: 50vh;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
