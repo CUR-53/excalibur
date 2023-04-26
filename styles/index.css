@@ -755,7 +755,6 @@ li:nth-child(10) {
 
 .foraeldre_container > h1 {
   text-align: center;
-  font-size: 2rem;
 }
 
 @media (min-width: 600px) {
