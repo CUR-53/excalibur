@@ -680,8 +680,14 @@ body {
   margin-bottom: 30px;
 }
 
-.foraeldre_container > h1, h2 {
-  color: #769914;
+.foraeldre_container > h2 {
+  font-weight: 400;
 }
+
+.foraeldre_container > h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
 
 /* ---------- Forældreinfo END ---------- */
