@@ -70,28 +70,24 @@
     padding: 220px 170px;
     bottom: 2240px;
     right: 20px;
-    border: red solid 1px;
   }
 
   .arrangement_link a {
     padding: 225px 180px;
     bottom: 1470px;
     left: 10px;
-    border: red solid 1px;
   }
 
   .kontakt_link a {
     padding: 230px 210px;
     bottom: 1245px;
     right: -70px;
-    border: red solid 1px;
   }
 
   .castle_link a {
     padding: 410px 350px;
     bottom: 0px;
     right: 240px;
-    border: red solid 1px;
   }
 
   .login_section {
