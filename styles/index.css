@@ -645,3 +645,43 @@ textarea {
 }
 
 /* ---------- Kontakt END ---------- */
+
+/* ---------- Forældreinfo ---------- */
+body {
+  margin: 0;
+}
+
+.foraeldre_main {
+  min-height: 100vh;
+  background-image: url('../assets/img/city-road.jpg');
+  background-position: center;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.foraeldre_section {
+  color: hsl(0, 0%, 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.foraeldre_container {
+  background-color: hsl(0, 0%, 0%, 0.75);
+  max-width: 900px;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.foraeldre_container > p {
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.foraeldre_container > h1, h2 {
+  color: #769914;
+}
+
+/* ---------- Forældreinfo END ---------- */
