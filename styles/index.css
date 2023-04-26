@@ -845,12 +845,12 @@ input::placeholder {
 }
 
 .medlem_container > p a {
-  text-decoration: underline;
+  text-decoration: none;
   color: lightgray;
 }
 
 .medlem_container > p a:hover {
-  color: rgba(0, 0, 0, 0.5);
+  color: #769914;
 }
 
 p {
@@ -866,14 +866,18 @@ p {
 }
 
 .medlem_container > button {
-  width: 200px;
-  height: 50px;
+  width: 150px;
+  height: 40px;
   margin-top: 20px;
   border: none;
   border-radius: 5px;
-  background-color: orange;
-
+  background-color: white;
+  font-weight: 700;
   cursor: pointer;
+}
+
+.medlem_container > button:hover {
+  background-color: #769914;
 }
 
 .medlem_container > button a {
