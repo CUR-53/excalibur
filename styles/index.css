@@ -450,7 +450,7 @@ input::placeholder {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 40px;
   border-radius: 20px;
-  width: 1000px;
+  width: 50vw;
   height: 50vh;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -705,3 +705,45 @@ li:nth-child(10) {
 } 
 
 /* ---------- Arrangement END ---------- */
+
+/* ---------- Forældreinfo ---------- */
+.foraeldre_main {
+  min-height: 100vh;
+  background-image: url('../assets/img/city-road.jpg');
+  background-position: center;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.foraeldre_section {
+  color: hsl(0, 0%, 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.foraeldre_container {
+  background-color: hsl(0, 0%, 0%, 0.75);
+  max-width: 900px;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.foraeldre_container > p {
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.foraeldre_container > h2 {
+  font-weight: 400;
+}
+
+.foraeldre_container > h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+/* ---------- Forældreinfo END ---------- */
