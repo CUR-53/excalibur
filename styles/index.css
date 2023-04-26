@@ -456,6 +456,13 @@ input::placeholder {
   grid-row-gap: 20px;
 }
 
+@media only screen and (min-width: 1200px) {
+  .galleri_container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
 .galleri_container > div {
   background-color: rgb(253, 253, 253);
 }
@@ -688,6 +695,5 @@ body {
   text-align: center;
   font-size: 2rem;
 }
-
 
 /* ---------- Forældreinfo END ---------- */
