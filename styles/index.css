@@ -447,6 +447,9 @@ input::placeholder {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 20px;
   width: 50vw;
   height: 50vh;
   grid-column-gap: 20px;
@@ -454,7 +457,7 @@ input::placeholder {
 }
 
 .galleri_container > div {
-  background-color: gray;
+  background-color: rgb(253, 253, 253);
 }
 
 .div1 {
