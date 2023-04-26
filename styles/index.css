@@ -55,6 +55,9 @@
 
   width: 100%;
   height: 100vh;
+  background-image: url('../assets/img/cave-inside.jpg');
+  background-position: center;
+  background-size: cover;
   background-color: #101010;
 
   color: white;
@@ -114,6 +117,36 @@
   font-family: 'Open Sans', sans-serif;
 
   overflow: hidden;
+}
+
+.darkness {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  position: absolute;
+  top: -6200px;
+  z-index: 3;
+
+  width: 100%;
+  height: 100%;
+}
+
+.cave {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  position: absolute;
+  top: -6300px;
+  width: 50px;
+  z-index: 4;
+
+  width: 100%;
+  height: 100%;
+}
+.cave img {
+  height: 50vh;
 }
 
 #canvas {
