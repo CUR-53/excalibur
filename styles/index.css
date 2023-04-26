@@ -467,6 +467,7 @@ input::placeholder {
     grid-template-rows: repeat(12, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    border-radius: 20px;
   }
 
   .galleri_container > div {
@@ -522,6 +523,11 @@ input::placeholder {
     height: 100%;
     width: 100%;
     background-color: rgb(253, 253, 253);
+  }
+
+  .galleri_container > div img {
+    object-fit: contain;
+    max-width: 300px;
   }
 
   .div1 {
