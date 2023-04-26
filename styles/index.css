@@ -55,6 +55,9 @@
 
   width: 100%;
   height: 100vh;
+  background-image: url('../assets/img/cave-inside.jpg');
+  background-position: center;
+  background-size: cover;
   background-color: #101010;
 
   color: white;
@@ -116,6 +119,36 @@
   overflow: hidden;
 }
 
+.darkness {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  position: absolute;
+  top: -6200px;
+  z-index: 3;
+
+  width: 100%;
+  height: 100%;
+}
+
+.cave {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  position: absolute;
+  top: -6300px;
+  width: 50px;
+  z-index: 4;
+
+  width: 100%;
+  height: 100%;
+}
+.cave img {
+  height: 50vh;
+}
+
 #canvas {
   z-index: 1;
 }
@@ -142,7 +175,7 @@
 }
 
 .castle img {
-  height: 80vh;
+  height: 90vh;
 }
 
 canvas {
@@ -176,8 +209,6 @@ canvas {
   background-image: url('../assets/img/city-road.jpg');
   background-position: center;
   background-size: cover;
-
-  animation: scroll 95s infinite linear alternate;
 }
 
 .login_container {
@@ -242,16 +273,6 @@ canvas {
 
 .btn_form:hover {
   background-color: lightgray;
-}
-
-@keyframes scroll {
-  0% {
-    top: 0;
-  }
-
-  100% {
-    top: -3000px;
-  }
 }
 
 .login_form > a {
@@ -384,11 +405,11 @@ input::placeholder {
 
 @keyframes scroll {
   0% {
-    top: 0;
+    top: -1000px;
   }
 
   100% {
-    top: -3000px;
+    top: -4000px;
   }
 }
 
@@ -794,14 +815,27 @@ input::placeholder {
   font-family: 'Open Sans', sans-serif;
 }
 
+.medlem_section {
+  min-height: 100vh;
+  background-image: url('../assets/img/city-road.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
 .medlem_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  max-width: 900px;
   padding: 30px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
 }
 
 .medlem_title {
@@ -812,11 +846,11 @@ input::placeholder {
 
 .medlem_container > p a {
   text-decoration: underline;
-  color: black;
+  color: lightgray;
 }
 
 .medlem_container > p a:hover {
-  color: lightgrey;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 p {
@@ -828,7 +862,7 @@ p {
   align-items: center;
   justify-content: center;
 
-  color: black;
+  color: white;
 }
 
 .medlem_container > button {
