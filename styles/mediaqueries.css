@@ -27,6 +27,7 @@
 
   .arrangment_section {
     padding: 30px;
+    background-size: cover;
   }
 
   .arrangment_container {
@@ -36,6 +37,7 @@
 
   .arrangment_title {
     margin-top: 20px;
+    text-align: center;
   }
 }
 
