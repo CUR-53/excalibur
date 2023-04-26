@@ -439,7 +439,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .galleri_container {
@@ -459,18 +459,68 @@ input::placeholder {
   background-color: rgb(253, 253, 253);
 }
 
+@media only screen and (min-width: 768px) {
+  .galleri_container {
+    width: 900px;
+    height: 900px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .galleri_container > div {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+  }
+
+  .div1 {
+    grid-area: 10 / 1 / 13 / 3;
+  }
+  .div2 {
+    grid-area: 10 / 3 / 13 / 5;
+  }
+  .div3 {
+    grid-area: 10 / 5 / 13 / 7;
+  }
+  .div4 {
+    grid-area: 7 / 5 / 10 / 7;
+  }
+  .div5 {
+    grid-area: 7 / 3 / 10 / 5;
+  }
+  .div6 {
+    grid-area: 7 / 1 / 10 / 3;
+  }
+  .div7 {
+    grid-area: 4 / 1 / 7 / 4;
+  }
+  .div8 {
+    grid-area: 1 / 1 / 4 / 4;
+  }
+  .div9 {
+    grid-area: 4 / 4 / 7 / 7;
+  }
+  .div10 {
+    grid-area: 1 / 4 / 4 / 7;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .galleri_container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    width: 800px;
+    width: 1000px;
     grid-column-gap: 20px;
+    height: 600px;
     border-radius: 20px;
     grid-row-gap: 20px;
   }
 
   .galleri_container > div {
     height: 100%;
+    width: 100%;
     background-color: rgb(253, 253, 253);
   }
 
