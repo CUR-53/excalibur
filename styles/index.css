@@ -457,6 +457,39 @@ input::placeholder {
   height: 400px;
   width: 100%;
   background-color: rgb(253, 253, 253);
+  background-size: cover;
+  background-position: center;
+}
+
+.div1 {
+  background-image: url(https://picsum.photos/400?1);
+}
+.div2 {
+  background-image: url(https://picsum.photos/400?2);
+}
+.div3 {
+  background-image: url(https://picsum.photos/400?3);
+}
+.div4 {
+  background-image: url(https://picsum.photos/400?4);
+}
+.div5 {
+  background-image: url(https://picsum.photos/400?5);
+}
+.div6 {
+  background-image: url(https://picsum.photos/400?6);
+}
+.div7 {
+  background-image: url(https://picsum.photos/400?7);
+}
+.div8 {
+  background-image: url(https://picsum.photos/400?8);
+}
+.div9 {
+  background-image: url(https://picsum.photos/400?9);
+}
+.div10 {
+  background-image: url(https://picsum.photos/400?10);
 }
 
 @media only screen and (min-width: 768px) {
