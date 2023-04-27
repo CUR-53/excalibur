@@ -145,20 +145,39 @@
   height: 50vh;
 }
 
-.galleri_sign {
+.galleri_sign,
+.galleri_arrang,
+.galleri_kontakt {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 
   position: absolute;
-  top: -4000px;
   width: 50px;
   z-index: 4;
 
   width: 100%;
   height: 100%;
 }
+
+.galleri_sign {
+  top: -4500px;
+}
 .galleri_sign img {
+  height: 40vh;
+}
+
+.galleri_arrang {
+  top: -3000px;
+}
+.galleri_arrang img {
+  height: 40vh;
+}
+
+.galleri_kontakt {
+  top: -1500px;
+}
+.galleri_kontakt img {
   height: 40vh;
 }
 
