@@ -1,12 +1,12 @@
-let collectionView = document.querySelector('.collection-view');
-let collection = document.querySelectorAll('.collection');
+let gelleriSection = document.querySelector('.galleri_section');
+let galleriContainer = document.querySelectorAll('.galleri_container');
 
-collection.forEach((item) => {
+galleriSection.forEach((item) => {
   item.addEventListener('click', () => {
-    collectionView.classList.add('active');
+    galleriSection.classList.add('active');
   });
 });
 
-collectionView.addEventListener('click', () => {
-  collectionView.classList.remove('active');
+galleriContainer.addEventListener('click', () => {
+  galleriContainer.classList.remove('active');
 });
