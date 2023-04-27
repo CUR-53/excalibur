@@ -6,6 +6,12 @@
     transform: translate(-50%, -50%);
   }
 
+  .galleri_sign,
+  .galleri_arrang,
+  .galleri_kontakt {
+    display: none;
+  }
+
   .register_row {
     flex-direction: row;
     gap: 20px;
@@ -16,6 +22,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .foraeldre_container > h1 {
+    text-align: center;
+  }
+
+  .kontakt_container,
+  .medlem_container,
+  .register_container {
+    margin-top: 0px;
+  }
+
+  .medlem_container {
+    border-radius: 10px;
   }
 
   .kontakt_row {

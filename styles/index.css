@@ -30,26 +30,7 @@
   width: 35px;
 }
 
-.hero_container h1 {
-  margin-top: -70px;
-
-  font-size: 4rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.hero_container p {
-  max-width: 700px;
-  margin: 40px 0;
-
-  text-align: center;
-
-  line-height: 30px;
-}
-
 .hero_section {
-  display: grid;
-
   position: relative;
   z-index: 2;
 
@@ -67,12 +48,29 @@
 }
 
 .hero_container {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
 
   width: 100%;
   height: 100%;
   padding: 0px 20px;
+}
+
+.hero_container h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero_container p {
+  max-width: 700px;
+
+  text-align: center;
+
+  line-height: 30px;
 }
 
 .hero_container button {
@@ -151,34 +149,34 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-
   position: absolute;
-  width: 50px;
-  z-index: 4;
-
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .galleri_sign {
   top: -4500px;
 }
-.galleri_sign img {
-  height: 40vh;
+.galleri_sign > img {
+  height: 300px;
+  z-index: 6;
 }
 
 .galleri_arrang {
   top: -3000px;
 }
-.galleri_arrang img {
-  height: 40vh;
+
+.galleri_arrang > img {
+  height: 300px;
+  z-index: 5;
 }
 
 .galleri_kontakt {
   top: -1500px;
 }
-.galleri_kontakt img {
-  height: 40vh;
+.galleri_kontakt > img {
+  height: 300px;
+  z-index: 4;
 }
 
 #canvas {
@@ -257,7 +255,7 @@ canvas {
   height: max-content;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 
   transform: translate(-50%, -50%);
 }
@@ -347,18 +345,16 @@ canvas {
 
 .register_container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
   min-width: 100px;
-  height: 100%;
-
-  text-align: center;
 }
 
 .register_title {
   margin: 10px 0 40px;
-
+  text-align: center;
   font-size: 30px;
   color: white;
 }
@@ -379,7 +375,7 @@ canvas {
   height: 100%;
   padding: 30px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 
   color: white;
 }
@@ -468,19 +464,23 @@ input::placeholder {
 /* ---------- Galleri ---------- */
 .galleri_section {
   display: flex;
+  background-image: url('../assets/img/forest-bg.jpg');
+  background-position: center;
+  background-size: cover;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .galleri_container {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 40px;
   width: 100%;
   height: 100%;
+  margin-top: 80px;
   gap: 30px;
   grid-column-gap: 20px;
 }
@@ -641,13 +641,12 @@ input::placeholder {
 
 .medlem_section {
   min-height: 100vh;
-  background-image: url('../assets/img/city-road.jpg');
+  background-image: url('../assets/img/forest-bg.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
 }
 
 .medlem_container {
@@ -657,15 +656,21 @@ input::placeholder {
   justify-content: center;
   max-width: 900px;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  margin-top: 80px;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
 .medlem_title {
-  margin-top: 20px;
-
+  margin-bottom: 3.5rem;
+  margin-top: 2rem;
+  font-size: 4rem;
   text-align: center;
+}
+
+.medlem_container > h4 {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
 }
 
 .medlem_container > p a {
@@ -724,7 +729,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
 
-  background-image: url('../assets/img/city-road.jpg');
+  background-image: url('../assets/img/forest-bg.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -733,6 +738,7 @@ input::placeholder {
   width: 100%;
   height: 100vh;
   padding: 20px;
+  margin-top: 80px;
 }
 
 .kontakt_title {
@@ -748,7 +754,7 @@ input::placeholder {
 
   padding: 30px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .kontakt_form > button {
@@ -791,9 +797,9 @@ textarea {
 
 .arrangment_section {
   min-height: 100vh;
-  background-image: url('../assets/img/city-road.jpg');
+  background-image: url('../assets/img/forest-bg.jpg');
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -801,26 +807,38 @@ textarea {
 
 .arrangment_container {
   display: flex;
+  margin-top: 80px;
   flex-direction: column;
   justify-content: center;
   max-width: 900px;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
 .arrangment_title {
-  margin-bottom: 50px;
+  margin-bottom: 3.5rem;
+  margin-top: 2rem;
   text-align: left;
   font-size: 4rem;
 }
 
 .arrangment_container > p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
 .arrangment_container > h3 {
-  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #769914;
+}
+
+.arrangment_container > h2 {
+  margin-bottom: 3.5rem;
+  margin-top: 2rem;
 }
 
 li {
@@ -837,7 +855,7 @@ li:nth-child(10) {
 /* ---------- Forældreinfo ---------- */
 .foraeldre_main {
   min-height: 100vh;
-  background-image: url('../assets/img/city-road.jpg');
+  background-image: url('../assets/img/forest-bg.jpg');
   background-position: center;
   font-family: 'Open Sans', sans-serif;
 }
@@ -850,24 +868,30 @@ li:nth-child(10) {
 }
 
 .foraeldre_container {
-  background-color: hsl(0, 0%, 0%, 0.5);
+  background-color: hsl(0, 0%, 0%, 0.8);
   max-width: 900px;
+  margin-top: 80px;
   padding: 3rem;
+  padding-bottom: 4rem;
 }
 
 .foraeldre_container > p {
   line-height: 1.5;
+  font-size: 1.6rem;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
 .foraeldre_container > h2 {
-  font-weight: 400;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #769914;
 }
 
 .foraeldre_container > h1 {
-  text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
+  margin-top: 2rem;
+  font-size: 4rem;
 }
 
 @media (min-width: 600px) {

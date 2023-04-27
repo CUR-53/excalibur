@@ -8,27 +8,41 @@
     <title>Kontakt</title>
   </head>
   <body>
+    <nav class="nav_section">
+      <div class="nav_container">
+        <div style="cursor: pointer" onclick="window.location.href='../index.html'"><h2>Excalibur</h2></div>
+        <div><img src="../assets/svg/swords.svg" alt="menu" /></div>
+      </div>
+    </nav>
     <main class="kontakt_main">
       <section class="kontakt_section">
         <div class="kontakt_container">
-            <form class="kontakt_form">
-              <h2 class="kontakt_title">Kontakt</h2>
-              <div class="kontakt_row">
-                <input id="fname" type="text" placeholder="Fornavn" name="fname" required />
-                <input id="lname" type="text" placeholder="Efternavn" name="lname" required />
-              </div>
-              <div>
-                <input id="email" type="email" placeholder="Email" name="email" required />
-              </div>
-              <div>
-                <input id="number" type="number" placeholder="Telefon nummer" name="number" required />
-              </div>
-              <div>
-                <textarea id="message" type="text" placeholder="Besked" name="message" required maxlength="200" style="height: 140px"></textarea>
-              </div>
-              <button class="kontakt_btn" type="submit" value="Send">Send</button>
-            </form>
-          </div>
+          <form class="kontakt_form">
+            <h2 class="kontakt_title">Kontakt</h2>
+            <div class="kontakt_row">
+              <input id="fname" type="text" placeholder="Fornavn" name="fname" required />
+              <input id="lname" type="text" placeholder="Efternavn" name="lname" required />
+            </div>
+            <div>
+              <input id="email" type="email" placeholder="Email" name="email" required />
+            </div>
+            <div>
+              <input id="number" type="number" placeholder="Telefon nummer" name="number" required />
+            </div>
+            <div>
+              <textarea
+                id="message"
+                type="text"
+                placeholder="Besked"
+                name="message"
+                required
+                maxlength="200"
+                style="height: 140px"
+              ></textarea>
+            </div>
+            <button class="kontakt_btn" type="submit" value="Send">Send</button>
+          </form>
+        </div>
       </section>
     </main>
   </body>

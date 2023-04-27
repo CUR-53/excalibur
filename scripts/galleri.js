@@ -1,12 +1,11 @@
-let gelleriSection = document.querySelector('.galleri_section');
-let galleriContainer = document.querySelectorAll('.galleri_container');
+let galleri = document.querySelectorAll('.galleri');
+let galleriContainer = document.querySelector('.galleri_container');
 
-galleriSection.forEach((item) => {
+galleri.forEach((item) => {
   item.addEventListener('click', () => {
-    galleriSection.classList.add('active');
+    galleri.forEach((elem) => {
+      elem.classList.remove('active');
+    });
+    item.classList.add('active');
   });
-});
-
-galleriContainer.addEventListener('click', () => {
-  galleriContainer.classList.remove('active');
 });
