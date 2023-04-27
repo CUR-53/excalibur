@@ -2,7 +2,7 @@
 .nav_section {
   position: fixed;
   top: 0;
-  z-index: 3;
+  z-index: 10;
 
   width: 100%;
   background-color: rgb(0, 0, 0, 0.2);
