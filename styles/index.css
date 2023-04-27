@@ -159,7 +159,7 @@
   top: -4500px;
 }
 
-.galleri_sign>img {
+.galleri_sign > img {
   height: 300px;
   z-index: 6;
 }
@@ -168,7 +168,7 @@
   top: -3000px;
 }
 
-.galleri_arrang>img {
+.galleri_arrang > img {
   height: 300px;
   z-index: 5;
 }
@@ -177,7 +177,7 @@
   top: -1500px;
 }
 
-.galleri_kontakt>img {
+.galleri_kontakt > img {
   height: 300px;
   z-index: 4;
 }
@@ -279,7 +279,7 @@ canvas {
   color: white;
 }
 
-.login_form>button {
+.login_form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -308,7 +308,7 @@ canvas {
   background-color: lightgray;
 }
 
-.login_form>a {
+.login_form > a {
   padding-bottom: 20px;
 
   font-size: 13px;
@@ -319,7 +319,7 @@ canvas {
   cursor: pointer;
 }
 
-.login_form>a:hover {
+.login_form > a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -383,7 +383,7 @@ canvas {
   color: white;
 }
 
-.register_form>button {
+.register_form > button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -444,7 +444,7 @@ input::placeholder {
   }
 }
 
-.register_form>a {
+.register_form > a {
   display: flex;
 
   width: max-content;
@@ -458,7 +458,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.register_form>a:hover {
+.register_form > a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -488,7 +488,7 @@ input::placeholder {
   grid-column-gap: 20px;
 }
 
-.galleri_container>div {
+.galleri_container > div {
   height: 400px;
   width: 100%;
   background-color: rgb(253, 253, 253);
@@ -547,7 +547,7 @@ input::placeholder {
     border-radius: 20px;
   }
 
-  .galleri_container>div {
+  .galleri_container > div {
     height: 100%;
     width: 100%;
     background-color: rgb(253, 253, 253);
@@ -605,13 +605,13 @@ input::placeholder {
     grid-row-gap: 20px;
   }
 
-  .galleri_container>div {
+  .galleri_container > div {
     height: 100%;
     width: 100%;
     background-color: rgb(253, 253, 253);
   }
 
-  .galleri_container>div img {
+  .galleri_container > div img {
     object-fit: contain;
     max-width: 300px;
   }
@@ -661,30 +661,36 @@ input::placeholder {
 
 /* ---------- Showcase ---------- */
 
-.showcase_container > div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.showcase_main {
-  padding: 1rem 0;
-  background-image: url(../assets/img/city-road.jpg);
+.showcase_section {
+  display: flex;
+  background-image: url('../assets/img/forest-bg.jpg');
   background-position: center;
   background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   min-height: 100vh;
 }
 
 .showcase_container {
-  margin: 0 auto;
   display: grid;
+  width: 100%;
+  height: max-content;
+  margin: 0 auto;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: 125px;
   grid-auto-flow: dense;
+  background-color: hsl(0, 0%, 0%, 0.8);
   max-width: 1024px;
-  background-color: hsl(0, 0%, 0%, 0.5);
-  padding: 1rem;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.showcase_container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .horizontal {
@@ -741,21 +747,21 @@ input::placeholder {
   text-align: center;
 }
 
-.medlem_container>h4 {
+.medlem_container > h4 {
   font-size: 1.6rem;
   letter-spacing: 0.5px;
 }
 
-.medlem_container>p a {
+.medlem_container > p a {
   text-decoration: none;
   color: lightgray;
 }
 
-.medlem_container>p a:hover {
+.medlem_container > p a:hover {
   color: #769914;
 }
 
-.medlem_container>p {
+.medlem_container > p {
   margin: 20px 0;
 }
 
@@ -767,7 +773,7 @@ input::placeholder {
   color: white;
 }
 
-.medlem_container>button {
+.medlem_container > button {
   width: 150px;
   height: 40px;
   margin-top: 20px;
@@ -778,11 +784,11 @@ input::placeholder {
   cursor: pointer;
 }
 
-.medlem_container>button:hover {
+.medlem_container > button:hover {
   background-color: #769914;
 }
 
-.medlem_container>button a {
+.medlem_container > button a {
   text-decoration: none;
   color: black;
 }
@@ -830,7 +836,7 @@ input::placeholder {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.kontakt_form>button {
+.kontakt_form > button {
   max-width: 100px;
   margin: 0 auto;
 }
@@ -896,20 +902,20 @@ textarea {
   font-size: 4rem;
 }
 
-.arrangment_container>p {
+.arrangment_container > p {
   line-height: 1.5;
   font-size: 1.6rem;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.arrangment_container>h3 {
+.arrangment_container > h3 {
   font-weight: bold;
   font-size: 2rem;
   color: #769914;
 }
 
-.arrangment_container>h2 {
+.arrangment_container > h2 {
   margin-bottom: 3.5rem;
   margin-top: 2rem;
 }
@@ -948,20 +954,20 @@ li:nth-child(10) {
   padding-bottom: 4rem;
 }
 
-.foraeldre_container>p {
+.foraeldre_container > p {
   line-height: 1.5;
   font-size: 1.6rem;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.foraeldre_container>h2 {
+.foraeldre_container > h2 {
   font-weight: bold;
   font-size: 2rem;
   color: #769914;
 }
 
-.foraeldre_container>h1 {
+.foraeldre_container > h1 {
   margin-bottom: 3.5rem;
   margin-top: 2rem;
   font-size: 4rem;
