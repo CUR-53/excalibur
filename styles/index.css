@@ -819,7 +819,7 @@ li:nth-child(10) {
 }
 
 .foraeldre_container {
-  background-color: hsl(0, 0%, 0%, 0.75);
+  background-color: hsl(0, 0%, 0%, 0.5);
   max-width: 900px;
   padding: 3rem;
 }
