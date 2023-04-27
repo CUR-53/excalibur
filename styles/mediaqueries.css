@@ -59,6 +59,10 @@
     margin-top: 20px;
     text-align: center;
   }
+
+  .foraeldre_main {
+    background-size: cover;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
