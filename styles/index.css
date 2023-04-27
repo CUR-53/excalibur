@@ -988,9 +988,9 @@ li:nth-child(10) {
 
 .nyheder_section {
   min-height: 100vh;
-  background-image: url('../assets/img/city-road.jpg');
+  background-image: url('../assets/img/forest-bg.jpg');
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
