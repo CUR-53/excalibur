@@ -689,7 +689,7 @@ input::placeholder {
   justify-content: center;
 
   background-image: url('../assets/img/city-road.jpg');
-  background-position: top;
+  background-position: center;
   background-size: cover;
 }
 
