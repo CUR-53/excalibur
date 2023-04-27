@@ -929,7 +929,7 @@ li:nth-child(10) {
   max-width: 900px;
   height: 100vh;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
