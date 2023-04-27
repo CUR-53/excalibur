@@ -45,7 +45,7 @@
     gap: 30px;
   }
 
-  .arrangment_section {
+  .arrangment_section, .nyheder_section {
     padding: 30px;
     background-size: cover;
   }
@@ -55,13 +55,19 @@
     border-radius: 10px;
   }
 
-  .arrangment_title {
+  .arrangment_title, .nyheder_title {
     margin-top: 20px;
     text-align: center;
   }
 
   .foraeldre_main {
     background-size: cover;
+  }
+
+  .nyheder_container {
+    padding: 50px;
+    border-radius: 10px;
+    height: 100%;
   }
 }
 
