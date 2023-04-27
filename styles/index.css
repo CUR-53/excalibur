@@ -139,6 +139,7 @@
   width: 100%;
   height: 100%;
 }
+
 .cave img {
   height: 50vh;
 }
@@ -157,7 +158,8 @@
 .galleri_sign {
   top: -4500px;
 }
-.galleri_sign > img {
+
+.galleri_sign>img {
   height: 300px;
   z-index: 6;
 }
@@ -166,7 +168,7 @@
   top: -3000px;
 }
 
-.galleri_arrang > img {
+.galleri_arrang>img {
   height: 300px;
   z-index: 5;
 }
@@ -174,7 +176,8 @@
 .galleri_kontakt {
   top: -1500px;
 }
-.galleri_kontakt > img {
+
+.galleri_kontakt>img {
   height: 300px;
   z-index: 4;
 }
@@ -276,7 +279,7 @@ canvas {
   color: white;
 }
 
-.login_form > button {
+.login_form>button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -305,7 +308,7 @@ canvas {
   background-color: lightgray;
 }
 
-.login_form > a {
+.login_form>a {
   padding-bottom: 20px;
 
   font-size: 13px;
@@ -316,7 +319,7 @@ canvas {
   cursor: pointer;
 }
 
-.login_form > a:hover {
+.login_form>a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -380,7 +383,7 @@ canvas {
   color: white;
 }
 
-.register_form > button {
+.register_form>button {
   max-width: 100px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -441,7 +444,7 @@ input::placeholder {
   }
 }
 
-.register_form > a {
+.register_form>a {
   display: flex;
 
   width: max-content;
@@ -455,7 +458,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.register_form > a:hover {
+.register_form>a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -485,7 +488,7 @@ input::placeholder {
   grid-column-gap: 20px;
 }
 
-.galleri_container > div {
+.galleri_container>div {
   height: 400px;
   width: 100%;
   background-color: rgb(253, 253, 253);
@@ -496,30 +499,39 @@ input::placeholder {
 .div1 {
   background-image: url(https://picsum.photos/400?1);
 }
+
 .div2 {
   background-image: url(https://picsum.photos/400?2);
 }
+
 .div3 {
   background-image: url(https://picsum.photos/400?3);
 }
+
 .div4 {
   background-image: url(https://picsum.photos/400?4);
 }
+
 .div5 {
   background-image: url(https://picsum.photos/400?5);
 }
+
 .div6 {
   background-image: url(https://picsum.photos/400?6);
 }
+
 .div7 {
   background-image: url(https://picsum.photos/400?7);
 }
+
 .div8 {
   background-image: url(https://picsum.photos/400?8);
 }
+
 .div9 {
   background-image: url(https://picsum.photos/400?9);
 }
+
 .div10 {
   background-image: url(https://picsum.photos/400?10);
 }
@@ -535,7 +547,7 @@ input::placeholder {
     border-radius: 20px;
   }
 
-  .galleri_container > div {
+  .galleri_container>div {
     height: 100%;
     width: 100%;
     background-color: rgb(253, 253, 253);
@@ -544,30 +556,39 @@ input::placeholder {
   .div1 {
     grid-area: 10 / 1 / 13 / 3;
   }
+
   .div2 {
     grid-area: 10 / 3 / 13 / 5;
   }
+
   .div3 {
     grid-area: 10 / 5 / 13 / 7;
   }
+
   .div4 {
     grid-area: 7 / 5 / 10 / 7;
   }
+
   .div5 {
     grid-area: 7 / 3 / 10 / 5;
   }
+
   .div6 {
     grid-area: 7 / 1 / 10 / 3;
   }
+
   .div7 {
     grid-area: 4 / 1 / 7 / 4;
   }
+
   .div8 {
     grid-area: 1 / 1 / 4 / 4;
   }
+
   .div9 {
     grid-area: 4 / 4 / 7 / 7;
   }
+
   .div10 {
     grid-area: 1 / 4 / 4 / 7;
   }
@@ -584,13 +605,13 @@ input::placeholder {
     grid-row-gap: 20px;
   }
 
-  .galleri_container > div {
+  .galleri_container>div {
     height: 100%;
     width: 100%;
     background-color: rgb(253, 253, 253);
   }
 
-  .galleri_container > div img {
+  .galleri_container>div img {
     object-fit: contain;
     max-width: 300px;
   }
@@ -598,30 +619,39 @@ input::placeholder {
   .div1 {
     grid-area: 1 / 1 / 4 / 2;
   }
+
   .div2 {
     grid-area: 1 / 2 / 4 / 3;
   }
+
   .div3 {
     grid-area: 4 / 1 / 7 / 2;
   }
+
   .div4 {
     grid-area: 4 / 2 / 7 / 3;
   }
+
   .div5 {
     grid-area: 1 / 3 / 3 / 4;
   }
+
   .div6 {
     grid-area: 1 / 4 / 3 / 5;
   }
+
   .div7 {
     grid-area: 3 / 3 / 5 / 4;
   }
+
   .div8 {
     grid-area: 3 / 4 / 5 / 5;
   }
+
   .div9 {
     grid-area: 5 / 3 / 7 / 4;
   }
+
   .div10 {
     grid-area: 5 / 4 / 7 / 5;
   }
@@ -668,21 +698,21 @@ input::placeholder {
   text-align: center;
 }
 
-.medlem_container > h4 {
+.medlem_container>h4 {
   font-size: 1.6rem;
   letter-spacing: 0.5px;
 }
 
-.medlem_container > p a {
+.medlem_container>p a {
   text-decoration: none;
   color: lightgray;
 }
 
-.medlem_container > p a:hover {
+.medlem_container>p a:hover {
   color: #769914;
 }
 
-.medlem_container > p {
+.medlem_container>p {
   margin: 20px 0;
 }
 
@@ -694,7 +724,7 @@ input::placeholder {
   color: white;
 }
 
-.medlem_container > button {
+.medlem_container>button {
   width: 150px;
   height: 40px;
   margin-top: 20px;
@@ -705,11 +735,11 @@ input::placeholder {
   cursor: pointer;
 }
 
-.medlem_container > button:hover {
+.medlem_container>button:hover {
   background-color: #769914;
 }
 
-.medlem_container > button a {
+.medlem_container>button a {
   text-decoration: none;
   color: black;
 }
@@ -757,7 +787,7 @@ input::placeholder {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.kontakt_form > button {
+.kontakt_form>button {
   max-width: 100px;
   margin: 0 auto;
 }
@@ -823,20 +853,20 @@ textarea {
   font-size: 4rem;
 }
 
-.arrangment_container > p {
+.arrangment_container>p {
   line-height: 1.5;
   font-size: 1.6rem;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.arrangment_container > h3 {
+.arrangment_container>h3 {
   font-weight: bold;
   font-size: 2rem;
   color: #769914;
 }
 
-.arrangment_container > h2 {
+.arrangment_container>h2 {
   margin-bottom: 3.5rem;
   margin-top: 2rem;
 }
@@ -875,20 +905,20 @@ li:nth-child(10) {
   padding-bottom: 4rem;
 }
 
-.foraeldre_container > p {
+.foraeldre_container>p {
   line-height: 1.5;
   font-size: 1.6rem;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.foraeldre_container > h2 {
+.foraeldre_container>h2 {
   font-weight: bold;
   font-size: 2rem;
   color: #769914;
 }
 
-.foraeldre_container > h1 {
+.foraeldre_container>h1 {
   margin-bottom: 3.5rem;
   margin-top: 2rem;
   font-size: 4rem;
@@ -898,6 +928,7 @@ li:nth-child(10) {
   .foraeldre_section {
     padding: 3rem;
   }
+
   .foraeldre_container {
     border-radius: 1rem;
   }
@@ -927,8 +958,9 @@ li:nth-child(10) {
   flex-direction: column;
   justify-content: center;
   max-width: 900px;
-  height: 100vh;
+  height: 100%;
   padding: 30px;
+  margin-top: 80px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
@@ -939,8 +971,24 @@ li:nth-child(10) {
   font-size: 4rem;
 }
 
-.nyheder_container > p {
+ul > li {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin-top: 10px;
   margin-bottom: 30px;
+}
+
+.nyheder_container > p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.nyheder_container > h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #769914;
 }
 
 /* ---------- Nyheder END ---------- */
