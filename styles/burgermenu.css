@@ -73,8 +73,8 @@ input {
 
 .menu .menuContent {
   position: relative;
-  top: 30%;
-  font-size: 30px;
+  top: 28%;
+  font-size: 50px;
   text-align: center;
   margin-top: -50px;
 }
@@ -88,7 +88,9 @@ input {
 }
 
 .menuContent ul li {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .menuContent ul li a {
@@ -184,15 +186,18 @@ input {
 
 .span_flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-
-  font-size: 10px;
+  margin: 0 auto;
+  gap: 20px;
+  padding-top: 20px;
 }
 
 .span_flex li {
+  margin: 0 auto;
   background-color: #252525;
-  padding: 5px 30px;
+  padding: 5px 25px;
   border-radius: 5px;
+}
+
+.span_flex li a {
+  font-size: 10px;
 }
