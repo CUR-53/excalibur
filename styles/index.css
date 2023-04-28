@@ -500,7 +500,12 @@ input::placeholder {
   grid-column-gap: 20px;
 }
 
+<<<<<<< Updated upstream
 .galleri_container > div {
+=======
+.galleri_container > a {
+  height: 400px;
+>>>>>>> Stashed changes
   width: 100%;
   height: 400px;
   background-color: rgb(253, 253, 253);
@@ -547,6 +552,113 @@ input::placeholder {
 .div10 {
   background-image: url(https://picsum.photos/400?10);
 }
+<<<<<<< Updated upstream
+=======
+
+@media only screen and (min-width: 768px) {
+  .galleri_container {
+    width: 900px;
+    height: 900px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    border-radius: 20px;
+  }
+
+  .galleri_container > a {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+  }
+
+  .div1 {
+    grid-area: 10 / 1 / 13 / 3;
+  }
+  .div2 {
+    grid-area: 10 / 3 / 13 / 5;
+  }
+  .div3 {
+    grid-area: 10 / 5 / 13 / 7;
+  }
+  .div4 {
+    grid-area: 7 / 5 / 10 / 7;
+  }
+  .div5 {
+    grid-area: 7 / 3 / 10 / 5;
+  }
+  .div6 {
+    grid-area: 7 / 1 / 10 / 3;
+  }
+  .div7 {
+    grid-area: 4 / 1 / 7 / 4;
+  }
+  .div8 {
+    grid-area: 1 / 1 / 4 / 4;
+  }
+  .div9 {
+    grid-area: 4 / 4 / 7 / 7;
+  }
+  .div10 {
+    grid-area: 1 / 4 / 4 / 7;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .galleri_container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 1000px;
+    grid-column-gap: 20px;
+    height: 600px;
+    border-radius: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .galleri_container > a {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+  }
+
+  .galleri_container > div img {
+    object-fit: contain;
+    max-width: 300px;
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 4 / 2;
+  }
+  .div2 {
+    grid-area: 1 / 2 / 4 / 3;
+  }
+  .div3 {
+    grid-area: 4 / 1 / 7 / 2;
+  }
+  .div4 {
+    grid-area: 4 / 2 / 7 / 3;
+  }
+  .div5 {
+    grid-area: 1 / 3 / 3 / 4;
+  }
+  .div6 {
+    grid-area: 1 / 4 / 3 / 5;
+  }
+  .div7 {
+    grid-area: 3 / 3 / 5 / 4;
+  }
+  .div8 {
+    grid-area: 3 / 4 / 5 / 5;
+  }
+  .div9 {
+    grid-area: 5 / 3 / 7 / 4;
+  }
+  .div10 {
+    grid-area: 5 / 4 / 7 / 5;
+  }
+}
+
+>>>>>>> Stashed changes
 /* ---------- Galleri END ---------- */
 
 /* ---------- Showcase ---------- */
@@ -564,8 +676,14 @@ input::placeholder {
 }
 
 .showcase_container {
+<<<<<<< Updated upstream
+=======
+  max-width: 1024px;
+  margin: 0 auto;
+>>>>>>> Stashed changes
   display: grid;
   grid-auto-flow: dense;
+<<<<<<< Updated upstream
   grid-auto-rows: 125px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
@@ -585,6 +703,10 @@ input::placeholder {
   height: 100%;
 
   object-fit: cover;
+=======
+  background-color: hsl(0, 0%, 0%, 0.5);
+  padding: 1rem;
+>>>>>>> Stashed changes
 }
 
 .horizontal {
@@ -598,6 +720,23 @@ input::placeholder {
 .big {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.back_arrow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 0;
+  background-color: ;
+  padding: 0px 15px;
+  border-radius: 1rem;
+  background-color: hsl(76, 77%, 10%, 1);
+}
+
+.back_arrow a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 /* ---------- Showcase END ---------- */
