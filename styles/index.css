@@ -506,7 +506,23 @@ input::placeholder {
   height: 400px;
   background-color: rgb(253, 253, 253);
   background-position: center;
+  position: relative;
   background-size: cover;
+}
+
+.galleri_container > div > div {
+  position: absolute;
+  color: white;
+  padding: 1rem;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+time {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255, 0.75);
 }
 
 .div1 {
