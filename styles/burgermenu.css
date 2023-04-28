@@ -199,5 +199,6 @@ input {
 }
 
 .span_flex li a {
+  letter-spacing: 1px !important;
   font-size: 10px;
 }
