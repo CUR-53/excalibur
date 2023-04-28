@@ -147,9 +147,9 @@
   height: 50vh;
 }
 
-.galleri_sign,
-.galleri_arrang,
-.galleri_kontakt {
+.sign_galleri,
+.sign_arrang,
+.sign_kontakt {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -160,31 +160,31 @@
   height: 100%;
 }
 
-.galleri_sign {
+.sign_galleri {
   top: -4500px;
 }
 
-.galleri_sign > img {
+.sign_galleri > img {
   z-index: 6;
 
   height: 300px;
 }
 
-.galleri_arrang {
+.sign_arrang {
   top: -3000px;
 }
 
-.galleri_arrang > img {
+.sign_arrang > img {
   z-index: 5;
 
   height: 300px;
 }
 
-.galleri_kontakt {
+.sign_kontakt {
   top: -1500px;
 }
 
-.galleri_kontakt > img {
+.sign_kontakt > img {
   z-index: 4;
 
   height: 300px;
