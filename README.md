@@ -1,4 +1,4 @@
-# excalibur
+# Excalibur
 ### Live Action Role Playing club
 
 [Visit excalibur](https://cur-53.github.io/excalibur/)
