@@ -1,6 +1,6 @@
-const registerBtn = document.querySelector('.btn-register-form');
-const registerForm = document.querySelector('.register-form');
-const registerFormCharacter = document.querySelector('#register-form');
+const registerBtn = document.querySelector('.btn_register_form');
+const registerForm = document.querySelector('.register_form');
+const registerFormCharacter = document.querySelector('#register_form');
 /* const galleriBtn = document.querySelector('#galleri_btn'); */
 
 registerBtn.addEventListener('click', (e) => {
