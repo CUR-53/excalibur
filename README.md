@@ -1,8 +1,8 @@
 # Excalibur
-### Live Action Role Playing club
+### LARP Website - School project 
 
 [Visit excalibur](https://cur-53.github.io/excalibur/)
 
 ---
 
-Meet other local people interested in live action role playing
+Meet other local people interested in LARP
